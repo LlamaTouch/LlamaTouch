@@ -27,11 +27,11 @@ Key features of LlamaTouch:
 ## Dataset
 
 > [!TIP]
-> [llamatouch_task_metadata.tsv](https://github.com) contains the metadata of the dataset.
+> [llamatouch_task_metadata.tsv](dataset/llamatouch_task_metadata.tsv) contains the metadata of the dataset.
 >
-> See [docs](https://github.com) to explore and use the dataset.
+> See [docs](dataset/README.md) to explore and use the dataset.
 
-LlamaTouch comprises 496 mobile UI automation tasks, with 102 tasks sampled from [AITW](https://arxiv.org/abs/2307.10088) and 395 self-constructed tasks in 46 popular Android applications.
+LlamaTouch comprises 495 mobile UI automation tasks, with 102 tasks sampled from [AITW](https://arxiv.org/abs/2307.10088) and 393 self-constructed tasks in 46 popular Android applications.
 
 Each UI automation task in the dataset contains:
 

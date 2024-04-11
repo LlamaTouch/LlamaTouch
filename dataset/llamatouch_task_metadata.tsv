@@ -1,0 +1,496 @@
+episode	category	path	description	nsteps	app
+84143002711104077	general	general/trace_11	Open the settings	4	
+244629384739303596	general	general/trace_15	Open the contacts	3	
+601779706200353051	general	general/trace_18	Check the settings for the Google Photos app	6	
+10184947348061504048	general	general/trace_24	Install the eBay app	8	
+10243782909269828176	general	general/trace_25	Open the downloads	4	
+10362218190525405226	general	general/trace_27	What's on Reddit this week	18	
+10609424558081693691	general	general/trace_28	Check the settings for the Google Play Store app	7	
+10697484407812183269	general	general/trace_30	Find a good burger place on Maps	4	
+11274761796981573687	general	general/trace_34	Set an alarm for 9am	6	
+12144795137008029716	general	general/trace_44	Install the Facebook app	7	
+12321418230619720863	general	general/trace_47	Search for the best burger restaurants on Maps	6	
+13447984195116136702	general	general/trace_59	Search for the best pizza restaurants on Maps	7	
+1359994677477286277	general	general/trace_62	Install the Spotify app	7	
+13842732228357970269	general	general/trace_63	Open the calendar and show me this week's events?	8	
+14146702531165890110	general	general/trace_64	Play the latest video from the Washington Post on Youtube	11	
+8425939885665187143	general	general/trace_66	Open the files app	3	
+8308679030046945797	general	general/trace_67	Play the latest video from the Wall Street Journal	9	
+8220998894041399258	general	general/trace_68	How do I get to the nearest grocery store?	5	
+7710306920803871584	general	general/trace_69	What's on my calendar for the rest of the month?	6	
+6920892466294256415	general	general/trace_70	Check my gmail	4	
+615146254683807741	googleapps	googleapps/trace_0	Go to notification settings	5	
+10059323239052632892	googleapps	googleapps/trace_1	turn notification dots off	4	
+16130218024229308489	googleapps	googleapps/trace_10	manage bookmarks in the chrome app	7	
+16990707691550773437	googleapps	googleapps/trace_11	turn off wifi	6	
+1706058252082972419	googleapps	googleapps/trace_12	Search for sushi restaurants on Maps	7	
+17264685466393245607	googleapps	googleapps/trace_13	Set the phone to "Do not disturb".	3	
+17938678572019502635	googleapps	googleapps/trace_14	change alarm snooze length	7	
+18276215501712931344	googleapps	googleapps/trace_15	turn on improve location accuracy	9	
+2143123778391820313	googleapps	googleapps/trace_16	check android version	9	
+2709332978052021498	googleapps	googleapps/trace_18	set default search engine in the chrome app	8	
+4510365456227100626	googleapps	googleapps/trace_19	Show me the alarms in the clock app	4	
+10916189803433537913	googleapps	googleapps/trace_2	remove spam from my inbox in the gmail app	5	
+7035853841512486594	googleapps	googleapps/trace_20	What's on my calendar tomorrow?	4	
+7993805876286876419	googleapps	googleapps/trace_21	turn on translation in the chrome app	8	
+8709453762025764148	googleapps	googleapps/trace_22	turn on bluetooth scan	3	
+7597885808976673278	googleapps	googleapps/trace_23	delete a single message in the gmail app	5	
+5724477616608710006	googleapps	googleapps/trace_24	change the upload size in google photos	11	
+388098194778312464	googleapps	googleapps/trace_25	Open settings on Google Maps	6	
+427792410888378033	googleapps	googleapps/trace_26	Open my contact list	3	
+821873965856589741	googleapps	googleapps/trace_27	set the stopwatch	6	
+917635677146723873	googleapps	googleapps/trace_28	turn on airplane mode	4	
+1024517293080375339	googleapps	googleapps/trace_29	Go to sound settings	6	
+11137766304201944618	googleapps	googleapps/trace_3	Go to location settings	3	
+10690658741533756795	googleapps	googleapps/trace_30	all mails in gmail	6	
+10816182174687306590	googleapps	googleapps/trace_31	Open calendar and show me the third week of next month	5	
+1332016557291859807	googleapps	googleapps/trace_32	Open battery settings	5	
+14866579479115948048	googleapps	googleapps/trace_33	See recent photos	4	
+16754489084430570432	googleapps	googleapps/trace_34	open the mobile data screen to see how much data has been used	6	
+112339337270558693	googleapps	googleapps/trace_35	Go to privacy settings	5	
+10036634329889164652	googleapps	googleapps/trace_36	change keyboard looks	12	
+10054014647076707284	googleapps	googleapps/trace_37	toggle show notifications on the lock screen	7	
+10057547477448962219	googleapps	googleapps/trace_38	turn on the 12-hour format for clock	9	
+10069870216119325954	googleapps	googleapps/trace_39	move an email to a new category in the gmail app	7	
+12072717654790012155	googleapps	googleapps/trace_4	Go to network settings	4	
+10136307032389226297	googleapps	googleapps/trace_40	add a contact in the contacts app	8	
+10141029934822739021	googleapps	googleapps/trace_41	Open Maps and search for coffee	6	
+1014188285004997961	googleapps	googleapps/trace_42	disable javascript in the chrome app	10	
+1022381322165169730	googleapps	googleapps/trace_43	clear history in the chrome app	9	
+10231265714996052503	googleapps	googleapps/trace_44	open sync settings in chrome	7	
+10405500159604689136	googleapps	googleapps/trace_46	turn off improve location accuracy	8	
+10529094880631540491	googleapps	googleapps/trace_47	change the clock display to show seconds	6	
+10658725401855043223	googleapps	googleapps/trace_48	star an email in the gmail app	7	
+10774240587109527791	googleapps	googleapps/trace_49	check out phone information	6	
+12328916592710067202	googleapps	googleapps/trace_5	refresh tabs in the chrome app	7	
+1078852035958996113	googleapps	googleapps/trace_50	change the clock display to analog	8	
+10932276003609708502	googleapps	googleapps/trace_51	Open accessibility settings	5	
+10965326115903821893	googleapps	googleapps/trace_52	set the timer	6	
+11180604823399452754	googleapps	googleapps/trace_54	search for starred emails in the gmail app	7	
+11193627935006566144	googleapps	googleapps/trace_55	check google app version	11	
+11230143213828357962	googleapps	googleapps/trace_56	turn off notifications in google photos	9	
+11631772253949558470	googleapps	googleapps/trace_58	Do I have any events today?	4	
+11996685528816198600	googleapps	googleapps/trace_59	Show me popular videos on Youtube	5	
+12499699714226113785	googleapps	googleapps/trace_6	turn off notifications settings in the gmail app	8	
+13118642174915973036	googleapps	googleapps/trace_7	delete location history	12	
+13563225379366283319	googleapps	googleapps/trace_8	Open the map	2	
+302019774564249279	install	install/trace_0	open app "Microsoft Excel" (install if not already installed), go to login, and select forgot password	14	
+435532784588803030	install	install/trace_1	open app "Firefox Browser" (install if not already installed)	8	
+13253931976515142869	install	install/trace_10	open app "Nova Launcher" (install if not already installed) and go to login screen	9	
+13065134076605903239	install	install/trace_11	uninstall "Microsoft Authenticator"	11	
+12944175060824682900	install	install/trace_12	open app "HBO Max: Stream TV & Movies" (install if not already installed) and go to login screen	10	
+1289799277936902548	install	install/trace_13	install app "Booking.com: Hotels and more"	8	
+12852013953220349756	install	install/trace_14	open app "NewsBreak: Local News & Alerts" (install if not already installed) and enter user name: "switch@outlook.com" and password: "fabrics"	19	
+12411529750813182311	install	install/trace_15	install app "YouTube Kids"	7	
+12332283688054386795	install	install/trace_16	open app "Expedia: Hotels, Flights & Car" (install if not already installed) and enter user name: "crusader@outlook.com" and password: "Toryize"	13	
+12329784371069414483	install	install/trace_17	install app "Calculator"	3	
+11987929509433361963	install	install/trace_18	open app "Duolingo: language lessons" (install if not already installed), go to login, and select forgot password	11	
+11308530348773251676	install	install/trace_19	open app "Facebook" (install if not already installed), go to login, and select forgot password	11	
+456252872880478313	install	install/trace_2	uninstall "Microsoft Excel"	9	
+625666791332945222	install	install/trace_3	open app "Facebook" (install if not already installed) and enter user name: "resultants@gmail.com" and password: "earned"	13	
+10764637231793248966	install	install/trace_5	search app "VLC for Android" in Google Play Store	7	
+1113309466888726728	install	install/trace_6	search app "eBay: The shopping marketplace" in Google Play Store	6	
+1278315063969553502	install	install/trace_7	open app "McDonald's" (install if not already installed) and go to login screen	8	
+16713501499318826779	install	install/trace_8	open app "Messages" (install if not already installed)	3	
+18111418915520682125	install	install/trace_9	uninstall "Duolingo: language lessons"	6	
+10025436101560086995	webshopping	webshopping/trace_4	Search for the new nike air max shoes on Nike.	9	chrome
+11210827016250414937	webshopping	webshopping/trace_13	Look up the best rated video games on bestbuy.com	14	chrome
+14898222607635459621	webshopping	webshopping/trace_15	Show me the best rated coffee table on Ikea	12	chrome
+11064280273539174345	webshopping	webshopping/trace_12	Search for the best selling books on Target.	8	chrome
+10206507729967790953	webshopping	webshopping/trace_7	Add "usb-c to usb-a" to the cart on target.com	12	chrome
+10211715098999396623	webshopping	webshopping/trace_8	Empty the shopping cart on newegg.com.	9	chrome
+15104928044864284932	webshopping	webshopping/trace_17	Empty the shopping cart on bestbuy.	6	chrome
+15109604761158895069	webshopping	webshopping/trace_18	View the shopping cart on amazon.	8	chrome
+0	generated	generated/trace_0	Open the calculator and perform 2^13	8	Calculator
+1	generated	generated/trace_1	Set a timer for 20 minutes.	9	Coursera
+10	generated	generated/trace_10	Search for online Python courses on coursera.	10	Coursera
+11	generated	generated/trace_11	Find a crossword puzzle app and start a new puzzle.	18	English Crossword Puzzle
+12	generated	generated/trace_12	Create a playlist for a road trip in Spotify.	7	Spotify
+13	generated	generated/trace_13	Enable navigation in the Maps app directed me to a supermarket near me.	13	Google Maps
+14	generated	generated/trace_14	Open the e-book reader app and open a new novel.	10	Google Play Books
+15	generated	generated/trace_15	find the latest post of Openai on X.	10	X
+16	generated	generated/trace_16	Open the podcast app and subscribe to the "This Week in Tech" podcast.	9	Google Podcast
+17	generated	generated/trace_17	Open the news app and explore articles on sustainable living.	5	Google News
+18	generated	generated/trace_18	Practice pronunciation in French in Duolingo.	5	Duolingo
+19	generated	generated/trace_19	Set a daily screen time limit for X and receive a notification when reached.	12	X
+2	generated	generated/trace_2	Set an event for a haircut on Friday.	12	Google Calendar
+20	generated	generated/trace_20	Open the photo editing app and apply a vintage filter to a picture.	12	Google Photos
+21	generated	generated/trace_21	Open the "Google Keep" (install it if there is not) and create a shopping list.	14	Google Keep
+23	generated	generated/trace_23	Open the "Play Books" app and explore recommended books in the mystery genre.	7	Google Play Books
+24	generated	generated/trace_24	Open the "Money Manager" and record a $1500 income to my account.	17	Money Manager
+25	generated	generated/trace_25	explore latest articles about China on BBC.	5	BBC
+26	generated	generated/trace_26	Open Spotify and play The Blue Danube Waltz.	6	Spotify
+27	generated	generated/trace_27	Follow Yann LeCun on X.	7	X
+28	generated	generated/trace_28	like the song "aruarian dance" on Spotify.	7	Spotify
+29	generated	generated/trace_29	Set the system to a dark theme	6	Settings
+3	generated	generated/trace_3	Play my favorite song on Spotify	5	Spotify
+30	generated	generated/trace_30	open the youtube and subscribe to Hung-yi Lee	7	Youtube
+31	generated	generated/trace_31	start recording in Easy Voice Recorder	9	Easy Voice Recorder
+32	generated	generated/trace_32	start screen recording	6	
+33	generated	generated/trace_33	write a message to 12345678	7	Messages
+34	generated	generated/trace_34	check my inbox on X.	6	X
+35	generated	generated/trace_35	check my subscription update on youtube.	5	Youtube
+37	generated	generated/trace_37	open the youtube and watch the short video.	7	Youtube
+38	generated	generated/trace_38	Trace Tokyo time on clock app.	7	Clock
+4	generated	generated/trace_4	Open the camera app and take a photo.	4	Camera
+5	generated	generated/trace_5	Set a daily reminder to drink water.	9	Google Calendar
+6	generated	generated/trace_6	Open the Amazon app and track my recent orders.	4	Amazon
+7	generated	generated/trace_7	Open the X app and check my notifications	5	X
+9	generated	generated/trace_9	register an account on instagram.	42	instagram
+47574332150552188748	generated	generated/trace_40	Find and book a hotel room for 2 travellers in Tokyo for the nights of April 15th to April 20th, with free Wi-Fi and pool on Expedia.	17	Expedia
+53818457957765811092	generated	generated/trace_41	Book a round-trip flight from New York to Paris, departing on May 5th and returning on May 15th on Expedia.	17	Expedia
+88323620415993082184	generated	generated/trace_42	Reserve a rental car in Los Angeles from June 1st to June 7th, with a budget of up to $60 per day on Expedia.	14	Expedia
+09598740612387056736	generated	generated/trace_43	Explore things to do in Vienna for the last week of December on Expedia.	11	Expedia
+23997515582600858234	generated	generated/trace_44	Locate and explore a highly-rated seafood restaurant in Lisbon for dinner on Yelp.	11	Yelp
+56284471482777691867	generated	generated/trace_45	Subscribe to the subreddit r/science and set community alerts to frequent on Reddit.	9	Reddit
+10366782806939742426	generated	generated/trace_46	Find and display the hottest post from r/worldnews on Reddit.	6	Reddit
+67206388342240490599	generated	generated/trace_47	Search for all posts related to SpaceX launches last month in the r/space subreddit on Reddit.	7	Reddit
+33483262003522532248	generated	generated/trace_48	Schedule a meeting for 30 minutes on March 30th at 2 PM with title 'regular meeting' on Zoom	21	Zoom
+95582999407599785220	generated	generated/trace_49	Start a quick meeting on Zoom and copy invite link.	8	Zoom
+93713519431376976943	generated	generated/trace_50	Start a quick meeting on Zoom and mute my microphone.	6	Zoom
+50510315611946234060	generated	generated/trace_51	In Zoom, send myself a message with the text 'Hello, World!' on Team Chat.	7	Zoom
+02904638805840014715	generated	generated/trace_52	Customize my news feed to alert breaking news and US Politics on CNN app.	6	CNN
+50781263280449809708	generated	generated/trace_53	Find and bookmark an article about the latest developments in electric vehicles on CNN app.	8	CNN
+75196074175358502665	generated	generated/trace_54	Archive note 'shopping list' on Google Keep Notes app.	5	Google Keep Notes
+00264473182172342292	generated	generated/trace_55	Set a reminder for my dentist appointment on March 28th at 2 PM using Google Keep Notes app.	18	Google Keep Notes
+74876621317193717445	generated	generated/trace_56	Create a new note titled 'Daily Issues' on Google Keep Notes app.	5	Google Keep Notes
+33620937426667213093	generated	generated/trace_57	Find the best deals on LED TVs on the Walmart app.	6	Walmart
+46391721492098356979	generated	generated/trace_58	Add an shopping address to 1625 Plymouth St, Mountain View, CA 94043 with name 'Ian Agent' and phone number 4086414927 on the Walmart app.	14	Walmart
+43574162020835856284	generated	generated/trace_59	Check the availability of organic apples at my local Walmart store using the Walmart app.	7	Walmart
+56600703218051337517	generated	generated/trace_60	Update my Facebook profile picture to the a photo I took using the Facebook app.	12	Facebook
+86134685761012212592	generated	generated/trace_61	Turn on privacy settings to make my profile visible only to friends on the Facebook app.	10	Facebook
+90414022797243419065	generated	generated/trace_62	Search for and join openai group on the Facebook app.	7	Facebook
+73825911611640397724	generated	generated/trace_63	Create a new post 'Hello World' on the Facebook app.	6	Facebook
+30288969338199260130	generated	generated/trace_64	Follow OpenAI's Facebook page and like it's latest post using the Facebook app.	10	Facebook
+29186244710212316029	generated	generated/trace_65	Update my Facebook bio with 'Hello World' on Facebook app.	9	Facebook
+07852117084354456570	generated	generated/trace_69	Find and order a vegetarian pizza from the highest-rated restaurant in my area on DoorDash app.	12	DoorDash
+51613396229335889120	generated	generated/trace_70	Update my delivery address to 555 California St #200, San Francisco, CA on DoorDash app.	9	DoorDash
+93330144710628848872	generated	generated/trace_71	Set my favorite NFL team as the Patriots to get personalized news and game updates on the CBS Sports app.	10	CBS Sports
+86942554485271821441	generated	generated/trace_72	Find the schedule and scores for all NBA games happened on March 10th on the CBS Sports app.	5	CBS Sports
+34988720783478120394	generated	generated/trace_73	Read customer reviews for a 4K television on the Amazon Shopping app.	16	Amazon Shopping
+54008809651884716121	generated	generated/trace_74	Create a new list titled 'Birthday Gifts' and add a birthday card to it on the Amazon Shopping app.	19	Amazon Shopping
+27120704088056043420	generated	generated/trace_75	Compare prices of different sellers' Iphone 12 on the Amazon Shopping app.	11	NewsBreak
+32144746707996817903	generated	generated/trace_76	Customize my news feed on NewsBreak app to add world news and tech updates.	8	NewsBreak
+10307127022969771524	generated	generated/trace_78	Follow Los Angeles's weather channel to stay updated on weather on the NewsBreak app.	7	NewsBreak
+72063031683007889533	generated	generated/trace_79	Plan my ride from Google LLC to San Francisco international airport with UberXL selected on Uber app.	10	Uber
+48894179161568299803	generated	generated/trace_80	Audit the course 'Generative AI for Everyone' by DeepLearning.AI starting today on the Coursera app.	9	Coursera
+76871540800018629045	generated	generated/trace_81	Find all upcoming courses related to Data Science at beginner level on the Coursera app.	10	Coursera
+43249493630688016310	generated	generated/trace_82	Download the first video lecture for the 'Algorithms, Part I' course to watch offline on the Coursera app.	5	Coursera
+86305173204166261205	generated	generated/trace_83	Visit the forums for the 'Algorithms, Part I' course and go to discussion for Week 1 on Coursera.	6	Coursera
+60283332386078800009	generated	generated/trace_84	Find the nearest Burger King location to my current position and show me the operating hours on the Burger King app.	5	Burger King
+37547337958028288201	generated	generated/trace_85	Order a Whopper meal with small combo for pickup using the Burger King app.	9	Burger King
+77602702588810173936	generated	generated/trace_86	Set the whopper with small combo in cart as my favorite meal combination to my account on the Burger King app	5	Burger King
+88592829663478744681	generated	generated/trace_87	Create a new server named 'Agent Env' on the Discord app.	13	Discord
+10776911517687954927	generated	generated/trace_88	Join the voice channel 'Gaming' in agentian's server on Discord app.	8	Discord
+20141417861271191469	generated	generated/trace_89	Send text 'Hello World' in text channel 'general' of agentian's Server on Discord app.	6	Discord
+44735096960999425232	generated	generated/trace_90	Create a new private text channel 'Testbed' in agentian's server on Discord app.	11	Discord
+97355684603681020915	generated	generated/trace_91	Delete voice channel Lobby in agentian's server on Discord app.	10	Discord
+31845544016706435772	generated	generated/trace_92	Copy my invitaion link for new friend request on Discord app.	4	Discord
+18537417349977679854	generated	generated/trace_93	Search for the movie 'Inception' and add it to my watchlist on the Amazon Prime Video app.	7	Amazon Prime Video
+35454987668058683341	generated	generated/trace_94	Start playing the movie 'Kung Fu Panda' on my device using the Amazon Prime Video app.	6	Amazon Prime Video
+31210400103507593049	generated	generated/trace_95	Explore Freevee TV shows in Anime genre on Amazon Prime Video app.	5	Amazon Prime Video
+14691423821811460567	generated	generated/trace_96	Claim my daily reward on Duolingo app.	5	Duolingo
+80956784283199976157	generated	generated/trace_97	Turn off notification by SMS reminder on the Duolingo app.	8	Duolingo
+19421200636257810326	generated	generated/trace_98	Upload the latest photo from my device to a new folder named 'Selfie2024' on Google Drive app.	11	Google Drive
+17747186901356556087	generated	generated/trace_99	Share the 'Testbed' spreadsheet on Google Drive by copy link, make sure anyone with the link can view.	10	Google Drive
+49887114647252442773	generated	generated/trace_100	Withdraw the permission of the Discord app to use data to customize my Discord experience.	9	Discord
+06733627151764236573	generated	generated/trace_101	Set my DM Spam filter to 'Do not filter direct messages' on Discord app.	6	Discord
+91208163100338914805	generated	generated/trace_102	Add my status as 'working' for duration in 1 hour on Discord app.	8	Discord
+47484432450999127923	generated	generated/trace_103	Upload my latest picture as server icon of agentian's server on Discord app.	10	Discord
+35198449445560488841	generated	generated/trace_104	Check latest trendings in X app.	4	X
+65482626498206278601	generated	generated/trace_105	Upload my avatar on X app using my latest picture on device.	11	X
+09748360318556753187	generated	generated/trace_106	Bookmark latest post from OpenAI on X app.	7	X
+30992192585498751831	generated	generated/trace_107	Check posts from my bookmark on X app.	4	X
+34561995503958932589	generated	generated/trace_108	Turn off 'Allow direct messages from server members' on Discord app.	7	Discord
+99195208491420345623	generated	generated/trace_109	Search for Korean food on DoorDash app.	5	DoorDash
+85137864671311103978	generated	generated/trace_110	Clear my cart on DoorDash app.	5	DoorDash
+40098708379293353307	generated	generated/trace_111	Check available coffee under 30 min on DoorDash app.	5	DoorDash
+09672191157215161117	generated	generated/trace_112	Clear my watchlist on Amazon Prime TV.	7	Prime TV
+99225542868955057647	generated	generated/trace_113	Check live TV for News on Amazon Prime TV.	4	Prime TV
+78701670740302600854	generated	generated/trace_114	Search for the movie 'Ghost in the Shell' and click Like on Amazon Prime TV.	8	Prime TV
+66405074882588745163	generated	generated/trace_115	Search for the best Korean restaurant near me on Yelp.	7	Yelp
+65061411996682303736	generated	generated/trace_116	Search for barber shop near me on Yelp.	8	Yelp
+88246232944412801092	generated	generated/trace_117	Check latest local news on Newsbreak app.	3	Newsbreak
+29525643040952978889	generated	generated/trace_118	Open comments of latest world news on NewsBreak.	5	Newsbreak
+81319032418304250272	generated	generated/trace_119	Check my notification box on NewsBreak and open the first article.	4	Newsbreak
+41865469954702982201	generated	generated/trace_120	Create a new shopping list 'electronic' for my personal account on Amazon Shopping app.	8	Amazon Shopping
+30803761202902138350	generated	generated/trace_121	Check my recent order status on Amazon Shopping app.	4	Amazon Shopping
+50983273597130303809	generated	generated/trace_122	Find a grocery store and choose 'shop for pickup' near me at Amazon Shopping app.	5	Amazon Shopping
+53646405072680805164	generated	generated/trace_123	Add a new address using my current location and phone number 4086414927 on Amazon Shopping	11	Amazon Shopping
+92284267846224669601	generated	generated/trace_124	Add the nearest pickup location to my address book on Amazon Shopping app.	9	Amazon Shopping
+03953642395570128880	generated	generated/trace_125	Reset text size to Large on NewsBreak app.	6	NewsBreak
+48534763645083254911	generated	generated/trace_126	Show my primary location on NewsBreak app.	6	NewsBreak
+74679201803490270546	generated	generated/trace_127	Open my latest saved news acticle on NewsBreak app and check comments.	6	NewsBreak
+86584972871128851784	generated	generated/trace_128	View the full report of Crime map on NewsBreak app.	4	NewsBreak
+92316482611601969595	generated	generated/trace_129	Add topic 'Real Estate' to my top tabs on NewsBreak app.	5	NewsBreak
+32433169410833161594	generated	generated/trace_130	Switch to category 'Real Estate' and open the first article on NewsBreak app.	4	NewsBreak
+81539396514516527573	generated	generated/trace_131	Reset my store as 'Santa Clara Neighborhood Market' on Walmart app.	6	Walmart
+27314116611553190332	generated	generated/trace_132	Add organic milk to my cart for pickup tomorrow on Walmart app.	9	Walmart
+55940179524063484676	generated	generated/trace_133	Add eggs to my cart on Walmart app.	6	Walmart
+95963363532275459448	generated	generated/trace_134	Create a new list 'weekly grocery' on Walmart app.	7	Walmart
+26545303985307101068	generated	generated/trace_135	Add item 'chicken breast' to my list 'weekly grocery' on Walmart app.	10	Walmart
+85776064414863760410	generated	generated/trace_136	Check my cart on Walmart app.	3	Walmart
+63069548153207360855	generated	generated/trace_137	Remove all items in my cart on Walmart app.	6	Walmart
+32896924605012553407	generated	generated/trace_138	In page 'Services', view Store map for my store on Walmart app.	4	Walmart
+32216078545725503729	generated	generated/trace_139	View my purchase history on Walmart app.	4	Walmart
+15981973409393729543	generated	generated/trace_140	Search for the top-rated answers to the question 'What are some of the best ways to learn programming?' on the Quora app.	8	Quora
+16686736916826856953	generated	generated/trace_141	On space page, view all spaces I might like on the Quora app.	3	Quora
+48376107299471538858	generated	generated/trace_142	Write a new post 'Hello World' on the Quora app.	5	Quora
+01341122393725050808	generated	generated/trace_143	Search for all contents related to AI on the Quora app.	5	Quora
+65169954120217368904	generated	generated/trace_144	In page 'Following', check latest posts and click the first one on the Quora app.	4	Quora
+98432833322370394479	generated	generated/trace_145	Check my notification on the Quora app.	3	Quora
+00150550311485070814	generated	generated/trace_146	Go to Adam D'Angelo's profile and follow him on the Quora app.	6	Quora
+02411236212501789984	generated	generated/trace_147	On the Quora app, go to my space and visit space 'History' for latest posts.	4	Quora
+92328922937169636540	generated	generated/trace_148	Upvote all contents I've bookmarked on the Quora app.	7	Quora
+17084169586936162915	generated	generated/trace_149	Follow the question 'What is computer science' on the Quora app.	7	Quora
+77763615755105195561	generated	generated/trace_150	On Quora app, Search and go to topic 'Economics', then go to answers in this topic .	7	Quora
+05931997227422511157	generated	generated/trace_151	Check the log of latest answer I've bookmarked on Quora app.	6	Quora
+39648868057232106265	generated	generated/trace_152	Go to 'Your content & stats' on Quora app.	4	Quora
+94004958705605230955	generated	generated/trace_153	Create a new crunchylist 'weekly list' on the Crunchyroll app.	7	Crunchyroll
+27183789745137326633	generated	generated/trace_154	Find and add the anime series 'Attack on Titan' to my crunchylist 'weekly list' on the Crunchyroll app.	8	Crunchyroll
+75751791176245978384	generated	generated/trace_155	Find and mark the anime series 'Classroom of the Elite' as 'watched' on the Crunchyroll app.	7	Crunchyroll
+83418971395911069524	generated	generated/trace_156	Start watching the first episode of 'Cowboy bebop' on the Crunchyroll app.	6	Crunchyroll
+16315256958896729394	generated	generated/trace_157	Set my Subtitles/CC Language as Italiano for my account on the Crunchyroll app.	5	Crunchyroll
+84590186387411468477	generated	generated/trace_158	Check notification for my account on the Crunchyroll app.	4	Crunchyroll
+13590002535260995620	generated	generated/trace_159	Rate the anime 'Demon Slayer' with four stars on the Crunchyroll app.	7	Crunchyroll
+75896400085412468308	generated	generated/trace_160	Set Audio Language preferences as Japanese for my account on the Crunchyroll app.	5	Crunchyroll
+63565736303949659302	generated	generated/trace_161	Browse for the most popular anime of romance genre on the Crunchyroll app.	6	Crunchyroll
+17664571300463692272	generated	generated/trace_162	Check comments of the 10th episode of 'Frieren: Beyound Journey's End' on the Crunchyroll app.	9	Crunchyroll
+44633808269373312290	generated	generated/trace_163	Check today's top headline on CBS Sports app and read the first one.	3	CBS Sports
+19505939444153171696	generated	generated/trace_164	Turn to page 'watch' and show me closest upcoming event on CBS Sport app.	4	CBS Sports
+88511331709664557305	generated	generated/trace_165	on CBS Sport app, turn to pick page, open the first pick on Top Picks, and check its odd.	5	CBS Sports
+99249153597675260460	generated	generated/trace_1046	Open the Evernote app on the device.	3	evernote
+48361370589850577857	generated	generated/trace_1047	Create a new note in Evernote.	4	evernote
+68891036351835078314	generated	generated/trace_1048	Open the Evernote app and navigate to the 'Customize' menu.	4	evernote
+41125732596614872486	generated	generated/trace_1049	Open the Evernote app and add 'My Tasks' to the current widegts in the 'Customize' menu.	5	evernote
+23591482051108468960	generated	generated/trace_1051	Insert a 'CheckBox' into a note in Evernote.	6	evernote
+23262990971333000805	generated	generated/trace_1053	Open the Evernote app and use the To-Do-List template in the first note.	6	evernote
+21794390851658492389	generated	generated/trace_1054	Open one note in the Evernote app and make it available offlline.	6	evernote
+91057766383380374443	generated	generated/trace_1055	View the 'Tasks' list in the Evernote app.	5	evernote
+77266655855442690972	generated	generated/trace_1056	Delete a note from Evernote.	7	evernote
+58731364594192098327	generated	generated/trace_1057	Open the settings page in the Evernote app.	5	evernote
+38728418020849540921	generated	generated/trace_1058	Open Evernote app and turn on the dark mode.	7	evernote
+51050448746139885522	generated	generated/trace_1059	Open Evernote app and view the 'Tags' list.	5	evernote
+85012185373880085441	generated	generated/trace_1060	Log out of the Evernote account on the device.	7	evernote
+60826932239258662027	generated	generated/trace_2002	Open YouTube, search for openai and subscribe it	5	youtube
+34018493485712856216	generated	generated/trace_2003	Open YouTube, visit the 'Subscriptions' tab, view content from the openai"	5	youtube
+62826626673732337521	generated	generated/trace_2004	Open YouTube, enter 'History'	4	youtube
+47784660364778702657	generated	generated/trace_2005	Open YouTube, check out the 'Shorts' section, play any short video	3	youtube
+12648920236262695344	generated	generated/trace_2007	Open YouTube, go to Notifications	3	youtube
+70923584556256950665	generated	generated/trace_2009	Open YouTube, go to 'My Channel', view the 'More info"	4	youtube
+83618979282513252651	generated	generated/trace_2010	Open YouTube, checkout trending	5	youtube
+17676787741099896182	generated	generated/trace_2011	Open YouTube, check Time watched	5	youtube
+27685682667247992065	generated	generated/trace_2012	Open YouTube, go to 'Help'	5	youtube
+71405956994812295670	generated	generated/trace_2013	Open YouTube, go to 'Help', search for 'how to upload a video'	9	youtube
+83715389550961717925	generated	generated/trace_2014	Open YouTube, go to 'Live'	5	youtube
+19670164169669154652	generated	generated/trace_2015	Open YouTube, go to 'Podcasts'	5	youtube
+29687743671188208145	generated	generated/trace_2016	Open Reddit, search for the 'technology' subreddit, and access it.	6	Reddit
+19625754417363008425	generated	generated/trace_2017	Open Reddit, search for the 'technology' subreddit and aceess to Communities.	7	Reddit
+45623670996688485729	generated	generated/trace_2018	Open Reddit, search for the 'technology' subreddit and aceess to Media.	7	Reddit
+05532575188510045710	generated	generated/trace_2020	Open Reddit, navigate to your Home feed and select Latest.	5	Reddit
+95847098127629167425	generated	generated/trace_2021	Open Reddit, navigate to the Communities.	4	Reddit
+92951001023228433085	generated	generated/trace_2022	Open Reddit, navigate to the Communities, search for openai and join.	9	Reddit
+93985891346984590376	generated	generated/trace_2023	Open Reddit, navigate to create a community.	5	Reddit
+30401060773883871434	generated	generated/trace_2024	Open Reddit, navigate to Inbox.	4	Reddit
+86156332723069566158	generated	generated/trace_2025	Open Reddit, navigate to Notifications setting.	6	Reddit
+82178602976204942465	generated	generated/trace_2026	Open Reddit, navigate to Chat.	4	Reddit
+71615833726613420022	generated	generated/trace_2027	Open Reddit, navigate to Chat and explore channels.	5	Reddit
+98907194108465733788	generated	generated/trace_2028	Open Reddit, check my profile.	5	Reddit
+66571536661150241191	generated	generated/trace_2029	Open Reddit, go to setting.	5	Reddit
+69774829628281741613	generated	generated/trace_2030	Open Reddit, go to history.	5	Reddit
+69947946018315292528	generated	generated/trace_2031	Open ESPN, go to setting	4	ESPN
+68028496446842170822	generated	generated/trace_2032	Open ESPN, go to setting and turn on captions.	6	ESPN
+90275343960913999406	generated	generated/trace_2033	Open ESPN, go to setting and check account details.	5	ESPN
+78121296286414573791	generated	generated/trace_2034	Open ESPN, search nba.	6	ESPN
+45297662930380347154	generated	generated/trace_2035	Open ESPN, navigate to Scores.	4	ESPN
+51119317804294463898	generated	generated/trace_2036	Open ESPN, remove nba Lakers from your favourite team.	8	ESPN
+43124894282726035312	generated	generated/trace_2037	Open ESPN, add nba Lakers to your favourite team.	8	ESPN
+90931685925596056017	generated	generated/trace_2038	Open ESPN, add LeBron James to my favourite player.	8	ESPN
+72604947945235265313	generated	generated/trace_2039	Open ESPN, add MLB to your favourite leagues.	8	ESPN
+31637855475038366286	generated	generated/trace_2040	Open ESPN, navigate to nba news.	6	ESPN
+48574915841176292561	generated	generated/trace_1061	Open the Pinterest app on the device.	3	pinterest
+36877252225900178785	generated	generated/trace_1062	Search for "interior design ideas" on Pinterest.	4	pinterest
+63068061163486725070	generated	generated/trace_1063	Open Pinterest and search a user named "Wendy's Lookbook" and follow the user.	8	pinterest
+09965994642400967436	generated	generated/trace_1064	Navigate to the settings menu in Piniterest.	5	pinterest
+45974907587305485383	generated	generated/trace_1065	Create a new board named "DIY Crafts" on Pinterest.	7	pinterest
+23020482350401078289	generated	generated/trace_1066	Open Pinterest and copy the link of a pin from the 'Home' page.	6	pinterest
+17092408163725348597	generated	generated/trace_1067	Open Pinterest and save a pin from the 'Home' page to your Profile.	6	pinterest
+98955738238976820054	generated	generated/trace_1068	Open Pinterest and view the comments of a pin from the 'Home' page.	5	pinterest
+21282496055064986717	generated	generated/trace_1069	Open Pinterest and view your own pin list.	5	pinterest
+27269435716909805819	generated	generated/trace_1070	Open Pinterest and open your own profile page.	5	pinterest
+95549733340984862896	generated	generated/trace_1071	Open Pinterest, open your own profile page and copy the shared link of yourself.	7	pinterest
+80840431650233700041	generated	generated/trace_1072	Open Pinterest, open your own profile page and view your following list.	6	pinterest
+98553877960789069125	generated	generated/trace_1073	Open Pinterst and refresh the 'Home' page to see new pins by clicking the 'Home' button again.	4	pinterest
+82296106606441936875	generated	generated/trace_1074	Open Pinterest and open one of your own board.	5	pinterest
+77760959145485616862	generated	generated/trace_1075	View 'Updates' in the 'Notifications' page in Pinterest.	4	pinterest
+36421317922436338957	generated	generated/trace_1076	View 'Inbox' in the 'Notifications' page in Pinterest.	5	pinterest
+90082270726497046768	generated	generated/trace_1077	Filter 'Updates' notifications by 'Comments' in the 'Notifications' page in Pinterest.	6	pinterest
+02655643323793035202	generated	generated/trace_1078	Open Pinterest and set your profile visibility to 'Private profile' in the settings menu.	7	pinterest
+43565282659590799973	generated	generated/trace_1079	Open Pinterest and search "DIY" in your own board list and open it.	7	pinterest
+15336490482091013315	generated	generated/trace_1080	Logout of the Pinterest app.	6	pinterest
+65980495491233090242	generated	generated/trace_1081	Open the Trello app on the device.	3	trello
+49842374611645413820	generated	generated/trace_1082	Open the Trello app and create a new board named "School".	7	trello
+86130815484414053348	generated	generated/trace_1083	Open the Trello app and add a new list titled "To Do" to the "School" board.	7	trello
+99543012544878573169	generated	generated/trace_1084	Open the Trello app, add a new card titled "Task 1" to the "To Do" list in the "School" board.	7	trello
+56910904243002218769	generated	generated/trace_1085	Open the Trello app and archive a list named "To Do" in the "School" board.	6	trello
+86986525776520359179	generated	generated/trace_1086	Open the Trello app and search the "Website" in the home page.	6	trello
+51977021183081727575	generated	generated/trace_1087	Open the Trello app and set a due date for a card in the "School" board.	7	trello
+68010160257555278661	generated	generated/trace_1088	Open the Trello app and post a comment on a card saying "Hello".	8	trello
+01113340909597553797	generated	generated/trace_1089	Open the Trello app and search for a board by the name "Team Goals".	5	trello
+14714280865749063247	generated	generated/trace_1090	Open the Trello app and copy the shared link of a board.	7	trello
+10204654254762287586	generated	generated/trace_1091	Open the Trello app and view the notification list.	4	trello
+58241449517906837408	generated	generated/trace_1092	Open the Trello app and navigate to the 'Settings' page.	5	trello
+60857814287565277707	generated	generated/trace_1093	Open the Trello app and switch to the dark theme in the settings.	7	trello
+74970464004167455192	generated	generated/trace_1095	Open the Trello app and create a new board using the "Basic Board" template.	8	trello
+01841040936009626040	generated	generated/trace_1096	Open the Trello app,open one board and pin it to the homescreen.	7	trello
+38923662554221845146	generated	generated/trace_1097	Open the Trello app and navigate to the "Workspace" menu.	4	trello
+73883764902547632607	generated	generated/trace_1098	Open the Trello app and enable the "Color blind friendly mode" in the settings menu.	5	trello
+31025351040209895502	generated	generated/trace_1099	Open the Trello app and view the "Offline boards" list.	5	trello
+68443044756890368886	generated	generated/trace_1100	Log out of the Trello app.	6	trello
+60319447542363336146	generated	generated/trace_1101	Open the Instagram app and follow an account named "artem_chek".	8	instagram
+76438330552559467593	generated	generated/trace_1102	Open the Instagram app and view the notification list.	4	instagram
+80007413727273669129	generated	generated/trace_1103	Open the Instagram app and like the first post in the page.	5	instagram
+11724744918296982583	generated	generated/trace_1105	Open the Instagram app and navigate to your personal profile page.	4	instagram
+68394460367569254203	generated	generated/trace_1106	Open the Instagram app, navigate to your personal profile page and view your following list.	5	instagram
+72456597037252870897	generated	generated/trace_1107	Open the Instagram app, search for "#travelgoals" and follow the hashtag.	8	instagram
+81821919256265485030	generated	generated/trace_1108	Open the Instagram app and navigate to "Settings".	5	instagram
+00905942730192406483	generated	generated/trace_1109	Open the Instagram app, go to "Settings" and activate "Private Account".	8	instagram
+28556554302473748465	generated	generated/trace_1110	Open the Instagram app and edit your profile to add "Travel Enthusiast" to your bio.	8	instagram
+64505819896691689490	generated	generated/trace_1111	Open the Instagram app and view the message list.	4	instagram
+01569568079661202882	generated	generated/trace_1112	Open the Evernote app, navigate to the customize menu and change the background.	7	evernote
+29712698204177805629	generated	generated/trace_1113	Open the Evernote app, navigate to the customize menu and delete 'Notes' from current widgets.	5	evernote
+16344496359050486422	generated	generated/trace_1114	Open the Evernote app, navigate to the customize menu, adjust the position of 'Recently Captured' to the first and save the change.	6	evernote
+47483449271413000670	generated	generated/trace_1115	Open the settings menu in the Evernote app and enable the 'Save photos in photo gallery' of the 'Camera'.	7	evernote
+61359121660965820701	generated	generated/trace_1116	Open the settings menu in the Evernote app and switch the 'Create button' to a 'Orbs' .	8	evernote
+99929791859928525848	generated	generated/trace_1117	Open the settings menu in the Evernote app and synchronize in the 'Sync' .	7	evernote
+56875895811745678644	generated	generated/trace_1118	Open the Trello app and view the 'Sync queue' list in the settings menu.	6	trello
+82596262506754150646	generated	generated/trace_1119	Open the Trello app and enable the "Show label names on card front" in the settings menu.	6	trello
+78846021801638251711	generated	generated/trace_1120	Open the Pinterest app, navigate to the 'Saved' page and sort your boards by 'A to Z'.	6	pinterest
+12707332091457923840	generated	generated/trace_1121	Open the Pinterest app, navigate to the 'Saved' page and view the 'Privacy and data' in the settings menu.	6	pinterest
+06761506724008078890	generated	generated/trace_1122	Open the Pinterest app, navigate to the 'Saved' page and view the 'Home feed tuner' in the settings menu.	6	pinterest
+36799065977242947348	generated	generated/trace_1123	Navigate to the 'Saved' page in the Pinterst app and view the 'Social permissions' in the settings menu.	6	pinterest
+36821541359409223942	generated	generated/trace_1124	Navigate to the 'Saved' page in the Pinterst app, open the settings menu and enable the 'Filter comments on my Pins' button in the 'Social permissions'.	7	pinterest
+91879968292098807146	generated	generated/trace_1125	Open the Pinterest app, navigate to the 'Saved' page and view the 'Account management' in the settings menu.	6	pinterest
+70349123522332675097	generated	generated/trace_1126	Open the Instagram app on the device.	3	instagram
+60935742065730175618	generated	generated/trace_1127	Open the Instagram app and follow the user of first post .	4	instagram
+31000138144368736780	generated	generated/trace_1128	Open the Instagram app, navigate to your personal profile page and view your 'followers' list.	5	instagram
+55908855563295998976	generated	generated/trace_1129	Open the Instagram app, navigate to your personal profile page, go to "Settings" and view the "Blocked" list.	6	instagram
+23207909268482210615	generated	generated/trace_1130	Open the Instagram app, navigate to your personal profile page, go to "Settings" and view the "Close Friends" list.	6	instagram
+09467424977451412510	generated	generated/trace_1131	Open the Instagram app, navigate to your personal profile page, go to "Settings" and view the "Archive" list.	6	instagram
+95406499223449491946	generated	generated/trace_166	On Zoom, go to page 'More', and create a new whiteboard.	5	zoom
+69398024748593486712	generated	generated/trace_167	On Zoom, start my scheduled meeting 'regular meeting' right now.	4	zoom
+23526140271695568859	generated	generated/trace_168	On Zoom, share my screen using Meeting ID 896 9031 6084.	7	zoom
+73536682412030666293	generated	generated/trace_169	On Zoom, delete my scheduled meeting 'regular meeting'.	5	zoom
+54272041837297252248	generated	generated/trace_170	On Zoom, go to page 'More', turn to setting item 'Meetings', and turn on 'Mute my microphone'.	5	zoom
+00496106429738482561	generated	generated/trace_171	On Zoom, edit my scheduled meeting 'Weekly group meeting', set 'Repeat' to 'Every week'.	7	zoom
+53197156936832371126	generated	generated/trace_172	On Zoom, edit my scheduled meeting 'Weekly group meeting', turn 'Enable waiting room' on.	6	zoom
+33980584128538052215	generated	generated/trace_173	On Zoom, turn to page 'Team chat', bookmark my latest message to myself.	7	zoom
+28958952251368349529	generated	generated/trace_174	On Zoom, turn to page 'Team chat', set a reminder for my latest message to myself in 1 hour.	8	zoom
+17893891616939005772	generated	generated/trace_175	On Play Books, turn to settings and turn off notifications for Recommendations.	6	Play Books
+93052934836415980172	generated	generated/trace_176	On Play Books, turn to page 'Library' and create a new shelve named 'computer science'.	7	Play Books
+70354617777561637251	generated	generated/trace_177	On Play Books, turn to search page and check for top selling books.	4	Play Books
+20415356792321406685	generated	generated/trace_178	On Play Books, search for book 'The Three-Body Problem' and add it to my wishlist.	8	Play Books
+12505201977746419566	generated	generated/trace_179	On Play Books, Serach for book 'The Republic' and view its ratings.	7	Play Books
+59386465707034908988	generated	generated/trace_180	On Play Books, download the book sample in my shelve 'computer science'.	5	Play Books
+29834734709184354025	generated	generated/trace_181	On webtoon app, go to settings and set display as dark theme.	6	webtoon
+93983008628168243956	generated	generated/trace_182	On webtoon app, go to Spotlight in page 'CANVAS' and check weekly Hot Top 30 in COMEDY genre.	5	webtoon
+30385638682914557480	generated	generated/trace_183	webtoon app, go to my series, and continue to watch the first serie of list 'RECENT'.	4	webtoon
+95642439613589419387	generated	generated/trace_184	webtoon app, Explore series that are trending now, and subscribe to the first one.	5	webtoon
+50410259002185923610	generated	generated/trace_185	webtoon app, Go to the 1st episode of 'Nerd and Jock'.	4	webtoon
+43818625784764307579	generated	generated/trace_186	webtoon app, Find serie 'Nerd and Jock', turn to its author's page, and follow him.	6	webtoon
+77128071656483749822	generated	generated/trace_187	DoorDash, Search for Chinese restaurant under 30 min, and show the first result.	7	DoorDash
+85154425138000592874	generated	generated/trace_188	DoorDash, explore breakfast category, select 'under 30 min', go to the first result.	5	DoorDash
+13696275443326081642	generated	generated/trace_189	DoorDash, go to account page and click 'Saved' to check saved stores.	4	DoorDash
+87455263014480827236	generated	generated/trace_190	DoorDash, select category breakfast, go to the 1st one, swipe down and check 'What people are saying'.	5	DoorDash
+05277962828599022455	generated	generated/trace_191	DoorDash, turn to page grocery, and select 'view all stores'.	4	DoorDash
+75298981001337932566	generated	generated/trace_192	DoorDash, turn to page Retail, select category 'Flowers', and go to the first result.	5	DoorDash
+18449902094956675650	generated	generated/trace_193	DoorDash, turn to the first one of saved stores, and add the most liked item to my cart.	4	DoorDash
+24140452784357615632	generated	generated/trace_194	DoorDash, turn to the first one of saved stores, start a group order and copy its link.	6	DoorDash
+56255396389822687067	generated	generated/trace_195	DoorDash, remove all my group orders in cart if exist.	5	DoorDash
+27300407360995037103	generated	generated/trace_196	google Podcasts, go to page 'Explore' and start playing the most popular podcast right now.	7	google Podcasts
+73998892472971511820	generated	generated/trace_197	google Podcasts, go to page 'Activity' and click 'History' for previous podcasts.	4	google Podcasts
+27433316342703323685	generated	generated/trace_198	google Podcasts, go to page 'Activity', turn to 'Subscriptions', and clear all subscriptions I added.	8	google Podcasts
+33526889453121415084	generated	generated/trace_199	google Podcasts, download the first podcast on my home page.	5	google Podcasts
+08048809439118973090	generated	generated/trace_200	CNN app, turn to page 'Listen', click and start playing CNN News Central.	4	CNN
+24103379116178830745	generated	generated/trace_202	CNN app, turn to page 'Settings', click 'Edition' and change it to U.S..	6	CNN
+42740779735430759469	generated	generated/trace_203	On NewsBreak app, go to setting and switch to Dark mode.	5	NewsBreak
+13634369755161514362	generated	generated/trace_204	On NewsBreak app, go to settings and switch Text size to Large.	6	NewsBreak
+64832797302865871876	generated	generated/trace_205	On NewsBreak app, go to category 'tech', and check peoples' reactions for the first news.	4	NewsBreak
+92349394391693088636	generated	generated/trace_206	Set California City CA,93505 as my primary location on NewsBreak app.	5	NewsBreak
+45255394891586806621	generated	generated/trace_207	Edit my top tabs by click '+' on the top bar and add topic 'Traffic' on NewsBreak app.	5	NewsBreak
+90148264173352884022	generated	generated/trace_208	Go to 'Edit Profile' and upload my avatar by the photo in my device on Discord app.	11	Discord
+61002166466380076355	generated	generated/trace_209	Create a new server named 'homework' by Starting from template 'Study Group' for me and my friends on	11	Discord
+09057916815467494544	generated	generated/trace_210	Check my notifications and view the first one on Discord app.	4	Discord
+05153160033054959105	generated	generated/trace_211	Turn to sever 'homework' and turn on 'Allow Direct Messages' on Discord app.	5	Discord
+53134799093549636282	generated	generated/trace_212	Go to Notification Setting on Discord app.	6	Discord
+98078960122426488057	generated	generated/trace_213	Go to Settings of server 'Agent Env' on Discord app.	5	Discord
+03080771123702280876	generated	generated/trace_214	Go to Friend Request Setting of my account on Discord app.	6	Discord
+53166078675931850821	generated	generated/trace_215	Go to page 'Collections' and view all of my collections on Yelp app.	4	Yelp
+48505427833490254358	generated	generated/trace_216	Go to my notification on Yelp app.	4	Yelp
+03581422838736209268	generated	generated/trace_217	Go to page 'More' and turn to my recently viewed on Yelp app.	4	Yelp
+41129281445893361389	generated	generated/trace_218	Go to page 'More' and turn to my recently viewed, visit the first one and select 'Yes' for 'recommend this business' on Yelp app.	6	Yelp
+64436353687093832202	generated	generated/trace_219	Go to page 'More' and turn to 'Activity Feed' on Yelp app.	4	Yelp
+37464339610947383135	generated	generated/trace_220	Go to inbox and view my notifications on Expedia app.	4	Expedia
+05746263820468355373	generated	generated/trace_221	Go to Settings for my account on Expedia app.	4	Expedia
+60754639064368744531	generated	generated/trace_222	Go to Profile for my account and click 'edit' for 'Basic information' on Expedia app.	5	Expedia
+82211097771530228214	generated	generated/trace_2041	Open BBC news, open the setting.	4	BBC NEWs
+38831035225261917446	generated	generated/trace_2042	Open BBC news, go to Explore.	4	BBC NEWs
+78969505932612285518	generated	generated/trace_2043	Open BBC news, change the theme to dark mode.	6	BBC NEWs
+78194773267018506310	generated	generated/trace_2044	Open BBC news, go to Live.	4	BBC NEWs
+29065064257997327905	generated	generated/trace_2046	Open google maps, search for barbecue.	6	google maps
+16127112996731768552	generated	generated/trace_2047	Open google maps, navigate to Profile.	5	google maps
+62533807348509959346	generated	generated/trace_2048	Open google maps, navigate to Updates.	4	google maps
+09264800842889716595	generated	generated/trace_2049	Open google maps, check my starred places.	5	google maps
+79859308286532687477	generated	generated/trace_2050	Open Google maps, navigate home.	5	google maps
+15993449467577841766	generated	generated/trace_2051	Open Google maps to view nearby gas stations	4	google maps
+93956663249401116012	generated	generated/trace_2052	Open YT Music, go to Settings.	7	YT Music
+29189683831665738842	generated	generated/trace_2053	Open YT Music, check my History.	7	YT Music
+95888380976572547848	generated	generated/trace_2054	Open YT Music, check my Downloads.	7	YT Music
+85049839512307522517	generated	generated/trace_2055	Open YT Music, search pop music.	8	YT Music
+26560135736936484749	generated	generated/trace_2056	Open YT Music, search taylor swift.	8	YT Music
+32984598147169498739	generated	generated/trace_2057	Open YT Music, check my channel.	7	YT Music
+03738090709816704305	generated	generated/trace_2058	Open YT Music, navigate to Explore.	6	YT Music
+39695901728234291789	generated	generated/trace_2059	Open YT Music, navigate to Explore and go to New releases.	7	YT Music
+45082009791160879393	generated	generated/trace_2060	Open YT Music, navigate to Samples.	7	YT Music
+43387117414042220090	generated	generated/trace_1001	Open Snapchat and take a photo.	4	snapchat
+74563385158810829081	generated	generated/trace_1002	Open Snapchat spotlight page and like the first video.	5	snapchat
+43420534581471730998	generated	generated/trace_1004	Open Snapchat settings page.	5	snapchat
+22072206051442734201	generated	generated/trace_1005	Open Snapchat and turn to the personal profile page.	4	snapchat
+23987492270328060343	generated	generated/trace_1006	Navigate to Snapchat notification settings and turn on 'Dreams Suggestions'.	5	snapchat
+08157428678223909008	generated	generated/trace_1007	Navigate to Snapchat notification settings and turn off 'Friend Suggestions'.	5	snapchat
+92739133387158270108	generated	generated/trace_1009	Navigate to Snapchat settings, switch the app appearance to 'Always Dark' and restart the app.	6	snapchat
+70472153998957286046	generated	generated/trace_1010	Navigate to Snapchat settings and turn off the 'Birthday Party'.	5	snapchat
+45266162307099306062	generated	generated/trace_1011	Take a photo in Snapchat and save it to your Memories.	3	snapchat
+20262402241372896500	generated	generated/trace_1012	Open Snapchat and copy the shared link to invite your friends.	6	snapchat
+76177309082906825298	generated	generated/trace_1013	Navigate to Snapchat Stories page and copy the first story's shared link.	4	snapchat
+53378117207195617679	generated	generated/trace_1014	Open Snapchat and create a chat page with someone in the list.	7	snapchat
+52302499763200999728	generated	generated/trace_1015	Navigate to Snapchat stories page and view one of the story publisher's profile.	4	snapchat
+55700603246877448498	generated	generated/trace_1016	Open CapCut and start a new project.	4	capcut
+41021341387877955092	generated	generated/trace_1017	Open CapCut and navigate to 'Me' page.	4	capcut
+21116391360366643432	generated	generated/trace_1018	Open CapCut, navigate to 'Me' page and view the 'View history'.	5	capcut
+86934872165954067870	generated	generated/trace_1019	Open CapCut, navigate to 'Me' page and follow one creators.	5	capcut
+48946690745634834168	generated	generated/trace_1020	Open CapCut, navigate to 'Me' page and view the 'Liked content'.	5	capcut
+66338147222111259141	generated	generated/trace_1022	Open CapCut, navigate to 'Me' page and open the 'Followers' list.	5	capcut
+29764645033120230861	generated	generated/trace_1023	Open CapCut and like the first template in the 'Templates' page.	5	capcut
+83352739489184494018	generated	generated/trace_1024	Open CapCut and add the first template to favorites in the 'Templates' page.	5	capcut
+32817238661577482466	generated	generated/trace_1025	Open CapCut and open the first 'Business videos' template in the 'Templates' page.	5	capcut
+12328922604425966418	generated	generated/trace_1027	Open the first template in CapCut 'Templates' and view the comments.	5	capcut
+53107891994481296944	generated	generated/trace_1028	Open the first template in CapCut 'Templates' and copy the sared link.	6	capcut
+12701093767614006415	generated	generated/trace_1029	Open CapCut and check the 'Interaction' notifications in 'Inbox' menu.	5	capcut
+37010052125684293784	generated	generated/trace_1030	Open CapCut and view the settings menu in the 'Edit'.	5	capcut
+91810602932126429683	generated	generated/trace_1031	Open CapCut and duplicate one of your projects in the 'Edit'.	6	capcut
+88790945928184003811	generated	generated/trace_1032	Open CapCut and delete one of your projects in the 'Edit'.	7	capcut
+47557115148772642698	generated	generated/trace_1033	Open CapCut and navigate to CapCut's help center in the 'Edit'.	5	capcut
+67497139147328262429	generated	generated/trace_1034	Open CapCut and view the terms of service in the settings.	5	capcut
+61140758682035797248	generated	generated/trace_1035	Open CapCut and clear the cache memory from the settings menu.	6	capcut
+65840646206701306846	generated	generated/trace_1036	Open CapCut and view all of the Explore items in the 'Edit'.	4	capcut
+56226258746917519449	generated	generated/trace_1132	Open the Google Tasks app on the device.	3	Google Tasks
+65627025087737662800	generated	generated/trace_1133	Open Google Tasks and create a new task named "Task2".	6	Google Tasks
+04235579762223688440	generated	generated/trace_1134	In Google Tasks, add a new list titled "Personal".	6	Google Tasks
+84678949575803385018	generated	generated/trace_1135	Open Google Tasks and navigate to your personal profile page.	4	Google Tasks
+56418472465019227213	generated	generated/trace_1136	Open Google Tasks and navigate to the settings menu in the personal profile page.	5	Google Tasks
+41027976563613149918	generated	generated/trace_1137	Open Google Tasks and sort your tasks by 'Date'.	5	Google Tasks
+42000576374734501474	generated	generated/trace_1138	Open Google Tasks and view your starred tasks.	4	Google Tasks
+19526741649842416022	generated	generated/trace_1139	Open Google Tasks and star "Task2".	4	Google Tasks
+51269297522683213516	generated	generated/trace_1140	Open Google Tasks and mark "Task2" as complete.	4	Google Tasks
+50827638723968537952	generated	generated/trace_1141	Open Google Tasks and delete the list "Test".	5	Google Tasks
