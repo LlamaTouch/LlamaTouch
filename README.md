@@ -44,7 +44,7 @@ Each UI automation task in the dataset contains:
 A visualized example in shown in the following figure.
 
 <div align="center">
-    <img src="src/example_task.png">
+    <img src="resources/example_task.png">
 </div>
 
 ## AgentEnv

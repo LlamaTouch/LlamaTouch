@@ -1,6 +1,6 @@
 ## Download
 
-This dataset can be downloaded from the [OneDrive link](https://onedrive.live.com).
+This dataset can be downloaded from the [OneDrive link](https://bupteducn-my.sharepoint.com/:u:/g/personal/li_zhang_bupt_edu_cn/EQggNRdjPXBDoWZ7wiMWXrkBAESYZYqciwtbaKmoYXkZ7g?e=muvel0).
 
 ## Organization
 
@@ -11,16 +11,19 @@ groundtruth-traces
 ├── general
 │  ├── trace_0
 │  │  ├── 0.png
+│  │  ├── 0_drawed.png
 │  │  ├── 0.xml
 │  │  ├── 0.vh
 │  │  ├── 0.json
 │  │  ├── 0.activity
 │  │  ├── 1.png
+│  │  ├── 1_drawed.png
 │  │  ├── 1.xml
 │  │  ├── 1.vh
 │  │  ├── 1.json
 │  │  ├── 1.activity
 │  │  ├── 1.ess
+│  │  ├── agg_plot.png
 │  │  ├── eventStructs.txt
 │  │  ├── instruction.txt
 │  ├── trace_1
@@ -41,6 +44,7 @@ Root folder:
 Each category folder contains different ground-truth traces named *trace_[n]*, comprising the following files, sorted by index i starting from 0:
 
 - *i*.png: Screenshot of the current UI
+- *i*_drawed.png: Screenshot of the current UI with highlighted UI components using data in *i*.json
 - *i*.xml: View hierarchy captured using the `adb uiautomator dump` command
 - *i*.vh: Json-format view hierarchy captured with in-app AccessibilityService
 - *i*.activity: Activity name of the foreground application in the current screen
