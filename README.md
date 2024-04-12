@@ -37,9 +37,9 @@ Each UI automation task in the dataset contains:
 
 - **A task description**: e.g., "Reserve a rental car in Los Angeles from June 1st-7th, with a budget of up to $60 per day on Expedia"
 - **A sequence of UI representations and actions** to complete the task
-    - UI representations: pixel-level screenshots and textual view hierarchies
+    - UI representations: pixel-level screenshots, textual view hierarchies, and activity name
     - Actions: concrete actions recorded on a UI representation
-- **Annotated essential states**: e.g., a textbox in the screen with the text "Your cart is empty"
+- **Annotated essential states**: e.g., a textbox in the screen with the text "Your cart is empty" as shown below
 
 A visualized example in shown in the following figure.
 
@@ -50,7 +50,7 @@ A visualized example in shown in the following figure.
 ## AgentEnv
 
 > [!TIP]
-> See [docs](https://github.com) to use AgentEnv.
+> See [doc](https://github.com/LlamaTouch/AgentEnv) to use AgentEnv.
 
 [AgentEnv](https://github.com/) acts as the bridge between a mobile agent and a mobile device (e.g., a real smartphone or an Android emulator) for real-world task execution.
 
@@ -62,7 +62,7 @@ See [docs](https://github.com) to use AgentEnv.
 ## LlamaTouch Evaluator
 
 > [!TIP]
-> See [docs](https://github.com) to use LlamaTouch Evaluator.
+> [Doc](https://github.com/LlamaTouch/Evaluator) for LlamaTouch Evaluator.
 
 LlamaTouch Evaluator takes the essential state-powered dataset and agent execution traces in real-world environments as the input.
 For each task, it iterates the agent execution trace to detect whether it traverses all annotated essential states to complete the task.
