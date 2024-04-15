@@ -61,6 +61,14 @@ TODO: show how to use the [LlamaTouch Evaluator](https://github.com/LlamaTouch/E
 
 ## Utils
 
+A sequence of scripts for processing the recorded UI interaction trace:
+
+1. `rename_tracedir.py`: convert timestamp-based captured traces to *0.png, 0.xml, 1.png, 1.xml, ...*
+
+2. `gen_uijson.py`: filter important UI nodes from xml file and generate a json file for drawling bounding boxes; output file: *0.json, 1.json, ...*
+
+3. `draw_bound.py`: draw bounding boxes according to generated json file using `gen_uijson.py`; output file: *0_drawed.png, 1_drawed.png, ...*
+
 Utilization scripts to enhance the dataset:
 
 - `gr_vis.py`: Plot aggregate figures for each ground-truth trace; this script requires the [LlamaTouch Evaluator](https://github.com/LlamaTouch/Evaluator) module.
