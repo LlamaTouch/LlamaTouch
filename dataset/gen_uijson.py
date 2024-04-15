@@ -197,7 +197,6 @@ def re_generated_json(vh_fp, json_fp, output_path):
 
 
 if __name__ == "__main__":
-    ALLOWED_EXTENSIONS = {"vh"}
     vh_files_path = []
 
     if len(sys.argv) == 1:
