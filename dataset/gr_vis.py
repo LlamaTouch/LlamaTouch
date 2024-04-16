@@ -8,7 +8,7 @@ from evaluator.task_trace import DatasetHelper, TaskTrace
 from evaluator.utils.visualization import plot_episode
 from PIL import Image
 
-helper = DatasetHelper()
+helper = DatasetHelper(epi_metadata_path="llamatouch_task_metadata.tsv")
 
 
 def plot_by_folder(trace_folder: str):
@@ -20,7 +20,7 @@ def plot_by_folder(trace_folder: str):
 
     trace = helper._load_groundtruth_trace_by_path(trace_folder)
 
-    c = trace_folder.split("/")[0]
+    c = helper.get_category_by_episode(episode)
 
     output_file = os.path.join(trace_folder, "agg_plot.png")
     plot_single_trace(

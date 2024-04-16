@@ -183,8 +183,8 @@ def trans_json(vh_fp, json_fp):
 
 
 def re_generated_json(vh_fp, json_fp, output_path):
-    index = eval(json_fp.split("/")[-1].split(".")[0])
-    folder_path = "/".join(json_fp.split("/")[:-1])
+    index = eval(os.path.splitext(os.path.basename(json_fp))[0])
+    folder_path = os.path.dirname(json_fp)
     print(f"fpath: {folder_path}")
 
     if is_checkpoint_json_file(folder_path, index):
