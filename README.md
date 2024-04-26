@@ -7,12 +7,12 @@
   <a href="#dataset">Dataset</a> •
   <a href="#agentenv">AgentEnv</a> •
   <a href="#llamatouch-evaluator">LlamaTouch Evaluator</a> •
-  <a href="https://arxiv.org/">Paper</a> •
+  <a href="https://arxiv.org/abs/2404.16054">Paper</a> •
   <a href="#citation">Citation</a>
 </p>
 
 LlamaTouch is a testbed for evaluating mobile UI automation agents in real-world mobile environments.
-It compares agent execution traces on mobile devices with our annotated essential states in the ground-truth datasets, rather than directly comparing two concrete action sequences on static datasets.
+It compares agent execution traces on mobile devices with (a sequence of) annotated essential states, rather than directly comparing two concrete action sequences on static datasets.
 
 Key features of LlamaTouch:
 
@@ -57,8 +57,6 @@ A visualized example in shown in the following figure.
 AgentEnv provides basic APIs for completing a mobile UI automation task, including (1) retrieve the UI representations from mobile devices, and (2) forward agent decisions (predicted actions) to the mobile devices.
 All device states will be recorded during task execution, which will be used in LlamaTouch Evaluator.
 
-See [docs](https://github.com) to use AgentEnv.
-
 ## LlamaTouch Evaluator
 
 > [!TIP]
@@ -70,4 +68,12 @@ For each task, it iterates the agent execution trace to detect whether it traver
 ## Citation
 
 ```
+@misc{zhang2024llamatouch,
+      title={LlamaTouch: A Faithful and Scalable Testbed for Mobile UI Automation Task Evaluation}, 
+      author={Li Zhang and Shihe Wang and Xianqing Jia and Zhihan Zheng and Yunhe Yan and Longxi Gao and Yuanchun Li and Mengwei Xu},
+      year={2024},
+      eprint={2404.16054},
+      archivePrefix={arXiv},
+      primaryClass={cs.HC}
+}
 ```
