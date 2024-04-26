@@ -8,26 +8,26 @@ We generate 22 simple tasks for evaluation, calculating the baseline completion 
 
 | App      | Task Description                                            | Baseline Steps | Our Method Steps | IsCompletion          | Steps Decrease Rate |
 | -------- | ----------------------------------------------------------- | -------------- | ---------------- | --------------------- | ------------------- |
-| sms      | clear recycle bin                                           | 3              | 1                | True                  | 66.67%              |
-| sms      | open setting                                                | 2              | 1                | True                  | 50%                 |
-| sms      | open nearliest conversation                                 | 2              | 1                | False                 | 50%                 |
-| sms      | tell zhangli i will not eat lunch today                     | 2              | 1                | True                  | 50%                 |
-| sms      | list archived conversation                                  | 3              | 1                | True                  | 66.67%              |
-| Calendar | open setting                                                | 2              | 1                | True                  | 50%                 |
-| Calendar | open calendar                                               | 1              | 1                | True                  | 0%                  |
-| Calendar | tell me i will eat lunch tommorrow 11:30 am                 | 3              | 1                | False                 | 66.67%              |
-| Calendar | create a task: i will eat lunch tommorrow 11:30 am          | 3              | 1                | False                 | 66.67%              |
-| gallery  | open setting                                                | 3              | 1                | True                  | 66.67%              |
-| gallery  | Open gallery                                                | 1              | 1                | True                  | 0%                  |
-| gallery  | open photo list                                             | 1              | 1                | True                  | 0%                  |
-| gallery  | open video list                                             | 7              | 1                | False                 | 85.71%              |
-| gallery  | search screenshot                                           | 2              | 1                | False                 | 50%                 |
-| Contacts | open setting                                                | 3              | 1                | True                  | 66.67%              |
-| Contacts | open contacts                                               | 1              | 1                | True                  | 0%                  |
-| Contacts | edit a contact, name is zhangli, phone number is 1234567890 | 2              | 1                | False                 | 50%                 |
-| Contacts | add a group, name is test                                   | 3              | 1                | False                 | 66.67%              |
-| Notes    | open setting                                                | 3              | 1                | True                  | 66.67%              |
-| Notes    | open notes                                                  | 1              | 1                | True                  | 0%                  |
-| Notes    | add I will eat lunch at xxx street at 12:00 to notes        | 1              | 1                | False                 | 0%                  |
-| Notes    | what i remember yesterday                                   | 2              | 2                | False                 | 0%                  |
+| sms      | Clear the recycle bin                                       | 3              | 1                | True                  | 66.67%              |
+| sms      | Open setting                                                | 2              | 1                | True                  | 50%                 |
+| sms      | Open the nearest conversation                               | 2              | 1                | False                 | 50%                 |
+| sms      | Tell li I will not eat lunch today                          | 2              | 1                | True                  | 50%                 |
+| sms      | List archived conversations                                 | 3              | 1                | True                  | 66.67%              |
+| Calendar | Open setting                                                | 2              | 1                | True                  | 50%                 |
+| Calendar | Open calendar                                               | 1              | 1                | True                  | 0%                  |
+| Calendar | Tell me I will eat lunch tomorrow 11:30 am                  | 3              | 1                | False                 | 66.67%              |
+| Calendar | Create a task: I will eat lunch tomorrow 11:30 am           | 3              | 1                | False                 | 66.67%              |
+| gallery  | Open setting                                                | 3              | 1                | True                  | 66.67%              |
+| gallery  | open gallery                                                | 1              | 1                | True                  | 0%                  |
+| gallery  | Open the photo list                                         | 1              | 1                | True                  | 0%                  |
+| gallery  | Open the video list                                         | 7              | 1                | False                 | 85.71%              |
+| gallery  | Search screenshots                                          | 2              | 1                | False                 | 50%                 |
+| Contacts | Open setting                                                | 3              | 1                | True                  | 66.67%              |
+| Contacts | Open contacts                                               | 1              | 1                | True                  | 0%                  |
+| Contacts | Edit a contact named li, phone number is 1234567890         | 2              | 1                | False                 | 50%                 |
+| Contacts | Add a group named test                                      | 3              | 1                | False                 | 66.67%              |
+| Notes    | Open setting                                                | 3              | 1                | True                  | 66.67%              |
+| Notes    | Open notes                                                  | 1              | 1                | True                  | 0%                  |
+| Notes    | Add I will eat lunch at xxx street at 12:00 to notes        | 1              | 1                | False                 | 0%                  |
+| Notes    | What did I remember yesterday                               | 2              | 2                | False                 | 0%                  |
 | Total    |                                                             | 51             | 23               | 13 (Completion Count) | 54.90%              |

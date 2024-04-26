@@ -52,7 +52,7 @@ A visualized example in shown in the following figure.
 > [!TIP]
 > See [doc](https://github.com/LlamaTouch/AgentEnv) to use AgentEnv.
 
-[AgentEnv](https://github.com/) acts as the bridge between a mobile agent and a mobile device (e.g., a real smartphone or an Android emulator) for real-world task execution.
+AgentEnv acts as a bridge between a mobile agent and a mobile device (e.g., a real smartphone or an Android emulator) for real-world task execution.
 
 AgentEnv provides basic APIs for completing a mobile UI automation task, including (1) retrieve the UI representations from mobile devices, and (2) forward agent decisions (predicted actions) to the mobile devices.
 All device states will be recorded during task execution, which will be used in LlamaTouch Evaluator.
