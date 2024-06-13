@@ -55,11 +55,22 @@ Each category folder contains different ground-truth traces named *trace_[n]*, c
 - agg_plot.png: A human-friendly and readable aggregate figure showing the sequence of screens and actions for completing the task
 
 
-## How to use
+## How-to-use Guide
 
-TODO: show how to use the [LlamaTouch Evaluator](https://github.com/LlamaTouch/Evaluator) module to access each episode in the dataset.
+Users need to install the [LlamaTouch Evaluator](https://github.com/LlamaTouch/Evaluator) module first.
 
-## Utilization scripts
+Refer to our example code [traverse_dataset_example.py](./traverse_dataset_example.py) to access episodes in the dataset. Users typically need to configure the task metadata path and dataset path as follows.
+
+```python
+helper = DatasetHelper(
+    epi_metadata_path="llamatouch_task_metadata.tsv",
+    gr_dataset_path="llamatouch_dataset"
+)
+```
+
+The [LlamaTouch Evaluator](https://github.com/LlamaTouch/Evaluator?tab=readme-ov-file#using-the-dataset) module provides additional details about usage.
+
+## Utilization Scripts
 
 1. `gr_vis.py`: Plot aggregate figrues for every ground-truth trace; this script requires the [LlamaTouch Evaluator](https:/github.com/LlamaTouch/Evaluator) module.
 
@@ -83,7 +94,7 @@ TODO: show how to use the [LlamaTouch Evaluator](https://github.com/LlamaTouch/E
     python3 dataset_stats.py llamatouch_task_metadata.tsv /path/to/dataset
     ```
 
-## Utilization scripts for processing new recorded traces
+## Utilization Scripts for Processing New Recorded Traces
 
 A sequence of scripts for processing the recorded UI interaction traces.
 
