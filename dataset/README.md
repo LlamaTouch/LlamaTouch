@@ -64,7 +64,11 @@ TODO: show how to use the [LlamaTouch Evaluator](https://github.com/LlamaTouch/E
 1. `gr_vis.py`: Plot aggregate figrues for every ground-truth trace; this script requires the [LlamaTouch Evaluator](https:/github.com/LlamaTouch/Evaluator) module.
 
     ```
-    python3 gr_vis.py /path/to/trace1 /path/to_trace2 ...
+    # plot individual traces
+    python3 gr_vis.py single /path/to/trace1 /path/to_trace2 ...
+
+    # plot all traces
+    python3 gr_vis.py all /path/to/dataset
     ```
 
 2. `dataset_stats.py`: Calculate and show dataset statistics, including the number of actions, essential states, etc.

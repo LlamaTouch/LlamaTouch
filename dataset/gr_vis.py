@@ -92,26 +92,27 @@ def plot_single_trace(
     )
 
 
-def plot_all():
+def plot_all(dataset_path: str):
 
     from concurrent.futures import ProcessPoolExecutor
 
-    e = ProcessPoolExecutor(max_workers=30)
+    e = ProcessPoolExecutor(max_workers=8)
 
     cats = ["general", "generated", "googleapps", "install", "webshopping"]
     for c in cats:
-        for trace in os.listdir(c):
-            if not os.path.isdir(os.path.join(c, trace)):
+        cat_path = os.path.join(dataset_path, c)
+        for trace in os.listdir(cat_path):
+            if not os.path.isdir(os.path.join(cat_path, trace)):
                 continue
 
             episode, task_description = open(
-                os.path.join(c, trace, "instruction.txt")
+                os.path.join(cat_path, trace, "instruction.txt")
             ).readlines()
             episode = episode.strip()
             task_description = task_description.strip()
 
             trace_id = trace
-            trace_path = os.path.join(c, trace)
+            trace_path = os.path.join(cat_path, trace)
             trace = helper._load_groundtruth_trace_by_path(trace_path)
 
             output_file = os.path.join(trace_path, "agg_plot.png")
@@ -129,8 +130,14 @@ def plot_all():
 
 
 if __name__ == "__main__":
-    if len(sys.argv) == 1:
-        plot_all()
-    else:
-        for item in sys.argv[1:]:
+    if len(sys.argv) < 3:
+        print("Usage: (1) Plotting for all traces: python gr_vis.py all [dataset_path]")
+        print(
+            "(2) Plotting for a single trace: python gr_vis.py single [trace_path1] [trace_path2] ..."
+        )
+        sys.exit(1)
+    elif sys.argv[1] == "all":
+        plot_all(sys.argv[2])
+    elif sys.argv[1] == "single":
+        for item in sys.argv[2:]:
             plot_by_folder(item)
