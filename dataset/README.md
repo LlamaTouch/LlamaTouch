@@ -59,17 +59,37 @@ Each category folder contains different ground-truth traces named *trace_[n]*, c
 
 TODO: show how to use the [LlamaTouch Evaluator](https://github.com/LlamaTouch/Evaluator) module to access each episode in the dataset.
 
-## Utils
+## Utilization scripts
+
+1. `gr_vis.py`: Plot aggregate figrues for every ground-truth trace; this script requires the [LlamaTouch Evaluator](https:/github.com/LlamaTouch/Evaluator) module.
+
+    ```
+    python3 gr_vis.py /path/to/trace1 /path/to_trace2 ...
+    ```
+
+2. `dataset_stats.py`: Calculate and show dataset statistics, including the number of actions, essential states, etc.
+
+    ```
+    python3 dataset_stats.py /path/to/dataset
+    ```
+
+3. `validate_metadata_dataset.py`: Validate the consistency of task descriptions between the task metadata file "llamatouch_task_metadata.tsv" and task descriptions stored "instructions.txt" in each trace folder.
+
+    ```
+    python3 dataset_stats.py llamatouch_task_metadata.tsv /path/to/dataset
+    ```
+
+## Utilization scripts for processing new recorded traces
 
 A sequence of scripts for processing the recorded UI interaction trace:
 
-1. `rename_tracedir.py`: convert timestamp-based captured traces to indices-based traces
+1. `rename_tracedir.py`: Convert timestamp-based captured traces to indices-based traces
 
-2. `gen_uijson.py`: filter important UI nodes from xml file and generate a json file for drawling bounding boxes; output file: *0.json, 1.json, ...*
+2. `gen_uijson.py`: Filter important UI nodes from xml file and generate a json file for drawling bounding boxes; output file: *0.json, 1.json, ...*
 
-3. `draw_bound.py`: draw bounding boxes according to generated json file using `gen_uijson.py`; output file: *0_drawed.png, 1_drawed.png, ...*
+3. `draw_bound.py`: Draw bounding boxes according to generated json file using `gen_uijson.py`; output file: *0_drawed.png, 1_drawed.png, ...*
 
-4. `gr_vis.py`: Plot aggregate figures for each ground-truth trace; this script requires the [LlamaTouch Evaluator](https://github.com/LlamaTouch/Evaluator) module.
+4. `gr_vis.py`: See description in "Utilization scripts"
 
 ```python
 python3 rename_tracedir.py [/path/to/trace_folder1 /path/to/trace_folder2 ...]
@@ -77,6 +97,5 @@ python3 rename_tracedir.py [/path/to/trace_folder1 /path/to/trace_folder2 ...]
 python3 gen_uijson.py [/path/to/0.vh /path/to/1.vh ...]
 
 python3 draw_bound.py [/path/to/0.png /path/to/1.png ...]
-
-python3 gr_vis.py [/path/to/trace_folder1 /path/to/trace_folder2 ...]
 ```
+
