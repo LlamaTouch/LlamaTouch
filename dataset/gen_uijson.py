@@ -416,5 +416,5 @@ if __name__ == "__main__":
         re_generated_json(
             vh_path,
             vh_path.replace(".vh", ".json"),
-            vh_path.replace(".vh", ".json_new"),
+            vh_path.replace(".vh", ".json"),
         )
