@@ -1,16 +1,11 @@
 import json
-import logging
 import os
-import re
 import sys
+from collections import defaultdict
+from concurrent.futures import ProcessPoolExecutor
+from typing import List
 
-
-def read_json(json_fp):
-    if not os.path.exists(json_fp):
-        return []
-    with open(json_fp, "r") as f:
-        data = json.load(f)
-    return data
+from utils import extract_ess_from_file
 
 
 def get_feature(item, attrs=["class", "text", "resource-id", "content-desc", "bounds"]):
@@ -118,109 +113,196 @@ def simplify_vh(vh_file_path):
     return filtered_data
 
 
-def is_checkpoint_json_file(folder_path, index):
-    checkpoint_path = os.path.join(folder_path, f"{str(index)}_drawed.png.text")
-    print(f"checkpoint_path: {checkpoint_path}")
-    return os.path.exists(checkpoint_path)
+def get_ess_ids(ess_path: str) -> List[int]:
+    """For essential states annotated on a UI representation, return their IDs.
+    Cases:
+    - If k == "activity", the v is always 0. Ignore this case.
+    """
+    return [
+        int(v)
+        for k, v in extract_ess_from_file(ess_path)
+        if v.isdigit() and int(v) >= 0 and k != "activity"
+    ]
 
 
-def get_noted_id(checkpoint_fp):
-    noted_ids = []
-    with open(checkpoint_fp, "r") as f:
-        lines = f.readlines()
-        for line in lines:
-            pattern = re.compile(r"<(-?\d+)(?::.*?)?>")
-            noted_ids += re.findall(pattern, line)
+def trans_json(vh_path, json_path, ess_path):
+    """Params:
+    1. os.path.exists(vh_path): always True;
+    2. os.path.exists(json_path): True only when the json file has been generated
+    before; else False.
+    3. os.path.exists(ess_path): True only when there are essential states
+    annotated on this UI repr; else False.
 
-    for item in noted_ids:
-        if item == "-1":
-            noted_ids.remove(item)
-        item = int(item)
+    Cases:
+    1. When there is ess_path, there must be json_path as ess_path is generated
+    according to the contents in json_path. In this case, this method will
+    generate a new json file without losing the key information of essential
+    states.
+    2. When there is no json_path and no ess_path, directly generate a new json
+    file based on vh_path.
+    """
+    # if there is essential states in this UI repr, preserve UI components with
+    # the same numeric id and replace the rest with the newest version of
+    # simplified VH
+    with open(json_path, "r") as f:
+        old_json_data = json.load(f)
+    if old_json_data is None:
+        return simplify_vh(vh_path)
 
-    return noted_ids
-
-
-def trans_json(vh_fp, json_fp):
-    checkpoint_fp = json_fp[:-5] + "_drawed.png.text"
-    noted_ids = get_noted_id(checkpoint_fp)
-    new_json_data = simplify_vh(vh_fp)
-    old_json_data = read_json(json_fp)
-    index_map = dict()
-    for noted_id in noted_ids:
-        noted_id = int(noted_id)
-        if noted_id >= len(new_json_data):
-            logging.info(f"warning{noted_id} out of range! {vh_fp}")
-            return old_json_data
-        print(f"len of new_json_data: {len(new_json_data)}")
-        # print(new_json_data)
-        onode = old_json_data[noted_id]
-        print(f"noted_id: {noted_id}")
-        flag = False
-        for nnode in new_json_data:
-            if get_feature(onode) == get_feature(nnode):
-                flag = True
-                index_map[noted_id] = nnode["id"]
-                # swap
-                temp = new_json_data[noted_id]
-                new_json_data[noted_id] = nnode
-                new_json_data[nnode["id"]] = temp
-                # swap id
-                temp_id = new_json_data[noted_id]["id"]
-                new_json_data[noted_id]["id"] = new_json_data[index_map[noted_id]]["id"]
-                new_json_data[index_map[noted_id]]["id"] = temp_id
-                print(f"warning: Found in new data! {vh_fp}:{noted_id}")
-                logging.info(f"warning: Found in new data! {vh_fp}:{noted_id}")
-                break
-        if not flag:
-            print(f"warning: Not found in new data! {vh_fp}:{noted_id}")
-            logging.info(f"warning: Not found in new data! {vh_fp}:{noted_id}")
-            temp = new_json_data[noted_id]
-            new_json_data[noted_id] = onode
-            new_json_data.append(temp)
-            # swap id
-            new_json_data[len(new_json_data) - 1]["id"] = len(new_json_data) - 1
-    return new_json_data
-
-
-def re_generated_json(vh_fp, json_fp, output_path):
-    index = eval(os.path.splitext(os.path.basename(json_fp))[0])
-    folder_path = os.path.dirname(json_fp)
-    print(f"fpath: {folder_path}")
-
-    if is_checkpoint_json_file(folder_path, index):
-        new_json_data = trans_json(vh_fp, json_fp)
+    if os.path.exists(ess_path):
+        ess_ids: List[int] = get_ess_ids(ess_path)
     else:
-        new_json_data = simplify_vh(vh_fp)
+        ess_ids = []
+    # if there is no essential states associated with UI components (with numeric
+    # ids), just replace the json file with the newest version of simplified VH
+    if len(ess_ids) == 0:
+        return simplify_vh(vh_path)
+
+    # find data to be preserved in old_json_data
+    preserved_data = {
+        ui_comp["id"]: ui_comp for ui_comp in old_json_data if ui_comp["id"] in ess_ids
+    }
+    new_json_data = simplify_vh(vh_path)
+    updated_data = []
+    preserved_data_ids = list(preserved_data.keys())
+
+    def _insert_with_index_update(lst: List, index: int, source: str, item: dict):
+        """Params:
+        - source: "new" or "preserved"
+        """
+        item["id"] = index
+        item["source"] = source
+        lst.append(item)
+        return lst
+
+    i = 0
+    new_json_data_index = 0
+    while new_json_data_index < len(new_json_data) or preserved_data_ids:
+        if i in preserved_data:
+            updated_data = _insert_with_index_update(
+                updated_data, i, "preserved", preserved_data[i]
+            )
+            preserved_data_ids.remove(i)
+        elif new_json_data_index < len(new_json_data):
+            updated_data = _insert_with_index_update(
+                updated_data, i, "new", new_json_data[new_json_data_index]
+            )
+            new_json_data_index += 1
+        i += 1
+
+        if new_json_data_index >= len(new_json_data):
+            if not preserved_data_ids:
+                break
+            else:
+                # add remaining preserved data to updated_data
+                for id in preserved_data_ids:
+                    updated_data = _insert_with_index_update(
+                        updated_data, i, "preserved", preserved_data[id]
+                    )
+                    i += 1
+                break
+
+    # check are there any identical items in updated_data
+    item_occurrences = defaultdict(list)
+    for item in updated_data:
+        excluded_keys = ["id", "source", "xpath"]
+        item_copy = {k: v for k, v in item.items() if k not in excluded_keys}
+        item_key = frozenset(item_copy.items())
+        item_occurrences[item_key].append(item)
+
+    # remove duplicated items in preserved data and new data
+    # the definition of duplication: when the values of their attributes,
+    # excluding 'xpath', 'source', and 'id' are the same
+    # if there is duplication, move the old id to the new id and append to
+    # updated_data_without_dup
+    updated_data_without_dup = []
+    for item_list in item_occurrences.values():
+        if len(item_list) > 1:
+            print("Identical items found", item_list, "start to update the old one")
+            new_item = None
+            preserved_id = None
+            for item in item_list:
+                if item["source"] == "preserved":
+                    preserved_id = item["id"]
+                elif item["source"] == "new":
+                    new_item = item
+
+            if new_item is not None:
+                if preserved_id is not None:
+                    new_item["id"] = preserved_id
+                updated_data_without_dup.append(new_item)
+            else:
+                raise Exception(
+                    f"duplicated items found: {item_list}, but no preserved id to be updated found"
+                )
+        else:
+            updated_data_without_dup.append(item_list[0])
+
+    # sort updated_data_without_dup by the 'id' attribute of its items
+    updated_data_without_dup.sort(key=lambda item: item["id"])
+    return updated_data_without_dup
+
+
+def re_generated_json(vh_path, json_path, output_path):
+    """if there is essential state annotated on this UI repr, generate new json
+    file without losing the key information of essential states
+    else just simplify the vh file to generate json file
+    """
+    print(f"processing file: {vh_path}")
+    if os.path.exists(json_path):
+        ess_path = json_path.replace(".json", ".ess")
+        new_json_data = trans_json(
+            vh_path=vh_path, json_path=json_path, ess_path=ess_path
+        )
+    else:
+        new_json_data = simplify_vh(vh_path)
 
     with open(output_path, "w") as f:
         json.dump(new_json_data, f, ensure_ascii=False, indent=4)
 
 
 if __name__ == "__main__":
-    vh_files_path = []
+    # paths of all traces to be processed
+    all_trace_paths = []
 
-    if len(sys.argv) == 1:
+    if len(sys.argv) < 3:
+        print(
+            "Usage: (1) Generate selected UI components json file for all traces: "
+            "python gen_uijson.py all [dataset_path]"
+        )
+        print(
+            "(2) Generate selected UI components json file for specific traces: "
+            "python gen_uijson.py single [trace_path1] [trace_path2] ..."
+        )
+        exit(1)
+
+    elif sys.argv[1] == "all":
+        dataset_path = sys.argv[2]
         cats = ["general", "generated", "googleapps", "install", "webshopping"]
-        for sub_categories in cats:
-            folder_path = sub_categories
+        for c in cats:
+            folder_path = os.path.join(dataset_path, c)
 
-            traces_path = os.listdir(folder_path)
-            traces_path = [os.path.join(folder_path, trace) for trace in traces_path]
-            traces_path = [trace for trace in traces_path if "trace" in trace]
-            traces_path = [trace for trace in traces_path if os.path.isdir(trace)]
+            traces_path = [
+                os.path.join(folder_path, trace) for trace in os.listdir(folder_path)
+            ]
+            traces_path = [
+                trace
+                for trace in traces_path
+                if "trace" in trace and os.path.isdir(trace)
+            ]
+            all_trace_paths.extend(traces_path)
 
-            for trace_path in traces_path:
-                vh_files = [
-                    file
-                    for file in os.listdir(trace_path)
-                    if file.rsplit(".", 1)[-1].lower() == "vh"
-                ]
-                for vh_file in vh_files:
-                    vh_files_path.append(os.path.join(trace_path, vh_file))
-    else:
-        for path in sys.argv[1:]:
-            vh_files_path.append(path)
+    elif sys.argv[1] == "single":
+        [all_trace_paths.append(path) for path in sys.argv[2:]]
 
-    for vh in vh_files_path:
-        re_generated_json(vh, vh[:-2] + "json", vh[:-2] + "json")
-        print(f"convert {vh} to {vh[:-2] + 'json'}")
+    # put all vh files to be processed into vh_files_path
+    vh_files_path = []
+    for trace_path in all_trace_paths:
+        [
+            vh_files_path.append(os.path.join(trace_path, file))
+            for file in os.listdir(trace_path)
+            if file.rsplit(".", 1)[-1].lower() == "vh"
+        ]
+    with ProcessPoolExecutor(max_workers=8) as executor:
+        for vh in vh_files_path:
+            executor.submit(re_generated_json, vh, vh.replace(".vh", ".json"), vh.replace(".vh", ".json_new"))

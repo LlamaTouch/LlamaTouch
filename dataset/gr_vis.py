@@ -131,9 +131,9 @@ def plot_all(dataset_path: str):
 
 if __name__ == "__main__":
     if len(sys.argv) < 3:
-        print("Usage: (1) Plotting for all traces: python gr_vis.py all [dataset_path]")
+        print("Usage: (1) Plot for all traces: python gr_vis.py all [dataset_path]")
         print(
-            "(2) Plotting for a single trace: python gr_vis.py single [trace_path1] [trace_path2] ..."
+            "(2) Plot for a single trace: python gr_vis.py single [trace_path1] [trace_path2] ..."
         )
         sys.exit(1)
     elif sys.argv[1] == "all":
