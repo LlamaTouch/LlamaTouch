@@ -8,7 +8,10 @@ from evaluator.task_trace import DatasetHelper, TaskTrace
 from evaluator.utils.visualization import plot_episode
 from PIL import Image
 
-helper = DatasetHelper(epi_metadata_path="llamatouch_task_metadata.tsv")
+helper = DatasetHelper(
+    epi_metadata_path="./llamatouch_task_metadata.tsv",
+    gr_dataset_path="/path/to/dataset",
+)
 
 
 def plot_by_folder(trace_folder: str):

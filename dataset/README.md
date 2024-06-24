@@ -1,6 +1,6 @@
 ## Download
 
-This dataset can be downloaded from the [OneDrive link](https://bupteducn-my.sharepoint.com/:u:/g/personal/li_zhang_bupt_edu_cn/EQXjI1lpOw1Csod3H5w-4y4BhQXcmV3zRqRY_EZm3GPVHQ?e=NbQxpa).
+This dataset can be downloaded from the [OneDrive link](https://bupteducn-my.sharepoint.com/:u:/g/personal/li_zhang_bupt_edu_cn/EQXjI1lpOw1Csod3H5w-4y4BcJGTETT5eiDXoo1fyCIhgA?e=80fLPp).
 
 ## Organization
 
@@ -63,8 +63,8 @@ Refer to our example code [traverse_dataset_example.py](./traverse_dataset_examp
 
 ```python
 helper = DatasetHelper(
-    epi_metadata_path="llamatouch_task_metadata.tsv",
-    gr_dataset_path="llamatouch_dataset"
+    epi_metadata_path="/path/to/llamatouch_task_metadata.tsv",
+    gr_dataset_path="/path/to/llamatouch_dataset"
 )
 ```
 
@@ -72,7 +72,7 @@ The [LlamaTouch Evaluator](https://github.com/LlamaTouch/Evaluator?tab=readme-ov
 
 ## Utilization Scripts
 
-1. `gr_vis.py`: Plot aggregate figrues for every ground-truth trace; this script requires the [LlamaTouch Evaluator](https:/github.com/LlamaTouch/Evaluator) module.
+1. `gr_vis.py`: Plot aggregate figures for every ground-truth trace; this script requires the [LlamaTouch Evaluator](https:/github.com/LlamaTouch/Evaluator) module.
 
     ```
     # plot individual traces
@@ -108,12 +108,12 @@ A sequence of scripts for processing the recorded UI interaction traces.
 
 4. `gr_vis.py`: See description in "Utilization scripts"
 
-```python
-python3 rename_tracedir.py [/path/to/trace_1] [/path/to/trace_2]
+    ```
+    python3 rename_tracedir.py [/path/to/trace_1] [/path/to/trace_2]
 
-python3 gen_uijson.py all [dataset_path]
-python3 gen_uijson.py single [/path/to/trace_1] [/path/to/trace_2] ...
+    python3 gen_uijson.py all [dataset_path]
+    python3 gen_uijson.py single [/path/to/trace_1] [/path/to/trace_2] ...
 
-python3 draw_bound.py [/path/to/0.png /path/to/1.png ...]
-```
+    python3 draw_bound.py [/path/to/0.png] [/path/to/1.png] ...
+    ```
 
