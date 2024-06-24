@@ -15,6 +15,108 @@ def get_feature(item, attrs=["class", "text", "resource-id", "content-desc", "bo
     return feature
 
 
+"""
+def filter_condition_xml(element):
+    null_state = ["", None, "None", "null"]
+    switch_class = [
+        "android.widget.Switch",
+        "android.widget.CheckBox",
+        "android.widget.RadioButton",
+        "android.widget.ToggleButton",
+        "android.widget.Button",
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.widget.TextView",
+        "android.widget.EditText",
+        "android.widget.ProgressBar",
+        "android.widget.SeekBar",
+        "android.widget.Spinner",
+    ]
+    child_count = len(element)
+    text = element.get("text", "")
+    content_description = element.get("content-desc")
+    visible = element.get("visible") == "true"
+    element_class = element.get("class")
+
+    if child_count != 0:
+        return (
+            text not in null_state or content_description not in null_state
+        ) and visible
+    else:
+        condition = (
+            visible
+            and (
+                text not in null_state
+                or content_description not in null_state
+                or element_class in switch_class
+            )
+            and "Menu" not in element_class
+            and element_class != "android.view.ViewGroup"
+            and element_class != "android.widget.FrameLayout"
+            and element_class != "android.widget.LinearLayout"
+            and element_class != "android.widget.RelativeLayout"
+            and element_class != "android.widget.HorizontalScrollView"
+        )
+        return condition
+
+
+def simplify_xml(xml_file_path):
+    tree = etree.parse(xml_file_path)
+    root = tree.getroot()
+
+    def _parse_element(element):
+        return {
+            "class": element.get("class", ""),
+            "text": element.get("text", ""),
+            "resource-id": element.get("resource-id", ""),
+            "content-desc": element.get("content-desc", ""),
+            "bounds": element.get("bounds", ""),
+            "enabled": element.get("enabled") == "true",
+            "checked": element.get("checked") == "true",
+            "checkable": element.get("checkable") == "true",
+            "visible": element.get("visible") == "true",
+            "selected": element.get("selected") == "true",
+            "focused": element.get("focused") == "true",
+            "focusable": element.get("focusable") == "true",
+            "clickable": element.get("clickable") == "true",
+            "long-clickable": element.get("long-clickable") == "true",
+            "password": element.get("password") == "true",
+            "scrollable": element.get("scrollable") == "true",
+            "child_count": len(element),
+        }
+
+    def _process_element(element):
+        filtered_data = []
+        for elem in element.iter():
+            item = _parse_element(elem)
+            if filter_condition_xml(item):
+                filtered_item = {
+                    "id": len(filtered_data),
+                    "class": item["class"],
+                    "text": item["text"],
+                    "resource-id": item["resource-id"],
+                    "content-desc": item["content-desc"],
+                    "bounds": item["bounds"].replace("], [", "][").replace(", ", ",")[1:-1] if item["bounds"] else "",
+                    "enabled": item["enabled"],
+                    "checked": item["checked"],
+                    "checkable": item["checkable"],
+                    "visible": item["visible"],
+                    "selected": item["selected"],
+                    "focused": item["focused"],
+                    "focusable": item["focusable"],
+                    "clickable": item["clickable"],
+                    "long-clickable": item["long-clickable"],
+                    "password": item["password"],
+                    "scrollable": item["scrollable"],
+                    "xpath": elem.getroottree().getpath(elem),
+                }
+                filtered_data.append(filtered_item)
+        return filtered_data
+
+    return _process_element(root)
+"""
+
+
 def filter_condition(item):
     null_state = ["", None, "None", "null"]
     switch_class = [
@@ -218,7 +320,7 @@ def trans_json(vh_path, json_path, ess_path):
     updated_data_without_dup = []
     for item_list in item_occurrences.values():
         if len(item_list) > 1:
-            print("Identical items found", item_list, "start to update the old one")
+            # print("Identical items found", item_list, "start to update the old one")
             new_item = None
             preserved_id = None
             for item in item_list:
@@ -238,6 +340,10 @@ def trans_json(vh_path, json_path, ess_path):
         else:
             updated_data_without_dup.append(item_list[0])
 
+    print(
+        f"{vh_path}, old: {len(old_json_data)} items, new: {len(updated_data_without_dup)} items"
+    )
+
     # sort updated_data_without_dup by the 'id' attribute of its items
     updated_data_without_dup.sort(key=lambda item: item["id"])
     return updated_data_without_dup
@@ -248,7 +354,6 @@ def re_generated_json(vh_path, json_path, output_path):
     file without losing the key information of essential states
     else just simplify the vh file to generate json file
     """
-    print(f"processing file: {vh_path}")
     if os.path.exists(json_path):
         ess_path = json_path.replace(".json", ".ess")
         new_json_data = trans_json(
@@ -296,13 +401,20 @@ if __name__ == "__main__":
         [all_trace_paths.append(path) for path in sys.argv[2:]]
 
     # put all vh files to be processed into vh_files_path
-    vh_files_path = []
+    vh_paths = []
     for trace_path in all_trace_paths:
         [
-            vh_files_path.append(os.path.join(trace_path, file))
+            vh_paths.append(os.path.join(trace_path, file))
             for file in os.listdir(trace_path)
             if file.rsplit(".", 1)[-1].lower() == "vh"
         ]
-    with ProcessPoolExecutor(max_workers=8) as executor:
-        for vh in vh_files_path:
-            executor.submit(re_generated_json, vh, vh.replace(".vh", ".json"), vh.replace(".vh", ".json_new"))
+    # with ProcessPoolExecutor(max_workers=8) as executor:
+    #     for xml_path in xml_paths:
+    #         executor.submit(re_generated_json, xml_path, xml_path.replace(".xml", ".json"), xml_path.replace(".xml", ".json_new"))
+
+    for vh_path in vh_paths:
+        re_generated_json(
+            vh_path,
+            vh_path.replace(".vh", ".json"),
+            vh_path.replace(".vh", ".json_new"),
+        )

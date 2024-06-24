@@ -109,9 +109,10 @@ A sequence of scripts for processing the recorded UI interaction traces.
 4. `gr_vis.py`: See description in "Utilization scripts"
 
 ```python
-python3 rename_tracedir.py [/path/to/trace_folder1 /path/to/trace_folder2 ...]
+python3 rename_tracedir.py [/path/to/trace_1] [/path/to/trace_2]
 
-python3 gen_uijson.py [/path/to/0.vh /path/to/1.vh ...]
+python3 gen_uijson.py all [dataset_path]
+python3 gen_uijson.py single [/path/to/trace_1] [/path/to/trace_2] ...
 
 python3 draw_bound.py [/path/to/0.png /path/to/1.png ...]
 ```
