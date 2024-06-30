@@ -12,36 +12,41 @@
 </p>
 
 LlamaTouch is a testbed for evaluating mobile UI automation agents in real-world mobile environments.
-It compares agent execution traces on mobile devices with (a sequence of) annotated essential states, rather than directly comparing two concrete action sequences on static datasets.
+It compares agent execution traces with (a sequence of) annotated essential states on UI interaction traces/datasets, rather than directly comparing two concrete action sequences.
+LlamaTouch achieves high evaluation accuracy while maintaining scalability.
 
-Key features of LlamaTouch:
+Key features:
 
-1. **Task execution in real-world mobile environments.**
-<!-- : Mobile UI automation agents execute tasks on real mobile devices with dynamic content to reveal their real capabilities. -->
+1. Task execution in real-world mobile environments.
 
-2. **Faithful and scalable task evaluation powered by essential application states.**
-<!-- : Powered by the annotated application states in the ground-truth task interaction sequences, LlamaTouch accurately records and compares application states with pre-defined counterparts. -->
+2. Faithful and scalable task evaluation powered by LlamaTouch Evaluator and annotated essential states.
 
-3. **Easy task set annotation and expansion with a rich set of UI state annotation primitives.**
+3. Easy task set annotation and expansion with a rich set of UI state annotation primitives and helper systems.
+
+The overall system architecture and workflow of LlamaTouch:
+
+<p align="center">
+    <img src="resources/overall-arch.png">
+</p>
 
 ## Dataset
 
-> [!TIP]
+> [!NOTE]
 > [llamatouch_task_metadata.tsv](dataset/llamatouch_task_metadata.tsv) contains the metadata of the dataset.
 >
 > See [docs](dataset/README.md) to explore and use the dataset.
 
-LlamaTouch comprises 495 mobile UI automation tasks, with 102 tasks sampled from [AITW](https://arxiv.org/abs/2307.10088) and 393 self-constructed tasks in 46 popular Android applications.
+LlamaTouch comprises 495 mobile UI automation tasks, with 102 tasks sampled from [AITW](https://arxiv.org/abs/2307.10088) and 393 self-constructed tasks from 46 popular Android applications.
 
-Each UI automation task in the dataset contains:
+Each task contains:
 
-- **A task description**: e.g., "Reserve a rental car in Los Angeles from June 1st-7th, with a budget of up to $60 per day on Expedia"
-- **A sequence of UI representations and actions** to complete the task
-    - UI representations: pixel-level screenshots, textual view hierarchies, and activity name
-    - Actions: concrete actions recorded on a UI representation
-- **Annotated essential states**: e.g., a textbox in the screen with the text "Your cart is empty" as shown below
+- **A task description**, e.g., "Reserve a rental car in Los Angeles from June 1st-7th, with a budget of up to $60 per day on Expedia."
+- **A sequence of UI representations and actions** to complete the task, labeled by human annotators:
+    - UI representations: Pixel-level screenshots, textual view hierarchies, Android activity names of each UI, etc.
+    - Actions: Actions performed on each UI to navigate to the next UI.
+- **Annotated essential states**, e.g., a textbox in the UI with the text field displaying "Your cart is empty" as shown below.
 
-A visualized example is shown in the following figure.
+A visualized dataset sample is shown in the following figure, with actions marked by blue plus markers and essential states highlighted with red bounding boxes and numeric IDs.
 
 <div align="center">
     <img src="resources/example_task.png">
@@ -49,21 +54,26 @@ A visualized example is shown in the following figure.
 
 ## AgentEnv
 
-> [!TIP]
-> See [doc](https://github.com/LlamaTouch/AgentEnv) to use AgentEnv.
+> [!NOTE]
+> Check out the [doc](https://github.com/LlamaTouch/AgentEnv) to use AgentEnv.
 
-AgentEnv bridges a mobile agent and a mobile device (e.g., a real smartphone or an Android emulator) for real-world task execution.
+AgentEnv bridges a mobile agent and real-world mobile environments (e.g., a real smartphone or an Android emulator) for on-device task execution.
 
-AgentEnv provides basic APIs for completing a mobile UI automation task, including (1) retrieving the UI representations from mobile devices, and (2) forwarding agent decisions (predicted actions) to the mobile devices.
-All device states will be recorded during task execution and used in LlamaTouch Evaluator.
+AgentEnv provides basic APIs for completing mobile UI automation tasks, including
+1. Retrieving UI representations from mobile environments.
+2. Forwarding agent decisions (predicted actions) to mobile environments.
+
+All device states are recorded during task execution and will be used in LlamaTouch Evaluator.
 
 ## LlamaTouch Evaluator
 
-> [!TIP]
-> [Doc](https://github.com/LlamaTouch/Evaluator) for LlamaTouch Evaluator.
+> [!NOTE]
+> Check out the [doc](https://github.com/LlamaTouch/Evaluator) to use LlamaTouch Evaluator.
 
-LlamaTouch Evaluator takes the essential state-powered dataset and agent execution traces in real-world environments as the input.
-For each task, it iterates the agent execution trace to detect whether it traverses all annotated essential states to complete the task.
+LlamaTouch Evaluator takes essential states from LlamaTouch dataset and agent execution traces as input.
+For each task, it iterates through the agent execution trace to detect whether all annotated essential states are traversed to complete the task.
+
+With human validation results, it can also report the accuracy of the evaluation approach.
 
 ## Citation
 
