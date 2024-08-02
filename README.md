@@ -1,5 +1,5 @@
 <div align="center">
-    <h1>LlamaTouch: A Faithful and Scalable Testbed for Mobile UI Automation Task Evaluation</h1>
+    <h1>LlamaTouch: A Faithful and Scalable Testbed for Mobile UI Task Automation</h1>
 </div>
 
 <p align="center">
@@ -10,6 +10,10 @@
   <a href="https://arxiv.org/abs/2404.16054">Paper</a> •
   <a href="#citation">Citation</a>
 </p>
+
+This work was accepted at [ACM UIST'24](https://uist.acm.org/2024/). Our 30-second teaser video:
+
+https://github.com/user-attachments/assets/2d51c1eb-9f57-4d00-9a65-9e5f57168fa1
 
 LlamaTouch is a testbed for evaluating mobile UI automation agents in real-world mobile environments.
 It compares agent execution traces with (a sequence of) annotated essential states on UI interaction traces/datasets, rather than directly comparing two concrete action sequences.
