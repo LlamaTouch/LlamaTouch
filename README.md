@@ -32,10 +32,10 @@ Key features:
 
 3. Easy task set annotation and expansion with a rich set of UI state annotation primitives and helper systems.
 
-The overall system architecture and workflow of LlamaTouch:
+The workflow and programming demonstrations of LlamaTouch:
 
 <p align="center">
-    <img src="resources/overall-arch.png">
+    <img src="resources/workflow.png">
 </p>
 
 ## Dataset
