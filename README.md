@@ -11,7 +11,12 @@
   <a href="#citation">Citation</a>
 </p>
 
-This work was accepted at [ACM UIST'24](https://uist.acm.org/2024/). Our 30-second teaser video:
+<img src="https://github.com/user-attachments/assets/f9081769-05d6-4135-a207-be3d5d255712" width="100" height="auto" style="vertical-align:middle">
+was accepted at <a href="https://uist.acm.org/2024/">ACM UIST'24</a>.
+Our 30-second teaser video:
+
+<br>
+<br>
 
 https://github.com/user-attachments/assets/2d51c1eb-9f57-4d00-9a65-9e5f57168fa1
 
