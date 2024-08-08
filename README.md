@@ -1,6 +1,11 @@
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/f9081769-05d6-4135-a207-be3d5d255712" alt="logo" width="20%">
+</p>
+
 <div align="center">
     <h1>LlamaTouch: A Faithful and Scalable Testbed for Mobile UI Task Automation</h1>
 </div>
+
 
 <p align="center">
 <!--   <a href="https://example.com">Website</a> • -->
