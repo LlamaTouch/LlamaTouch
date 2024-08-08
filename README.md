@@ -92,12 +92,14 @@ With human validation results, it can also report the accuracy of the evaluation
 ## Citation
 
 ```
+
 @misc{zhang2024llamatouch,
-      title={LlamaTouch: A Faithful and Scalable Testbed for Mobile UI Automation Task Evaluation}, 
+      title={LlamaTouch: A Faithful and Scalable Testbed for Mobile UI Task Automation}, 
       author={Li Zhang and Shihe Wang and Xianqing Jia and Zhihan Zheng and Yunhe Yan and Longxi Gao and Yuanchun Li and Mengwei Xu},
       year={2024},
       eprint={2404.16054},
       archivePrefix={arXiv},
-      primaryClass={cs.HC}
+      primaryClass={cs.HC},
+      url={https://arxiv.org/abs/2404.16054}, 
 }
 ```
