@@ -1,9 +1,9 @@
 <p align="center">
-    <img src="https://github.com/user-attachments/assets/f9081769-05d6-4135-a207-be3d5d255712" alt="logo" width="20%">
+    <img src="https://github.com/user-attachments/assets/f9081769-05d6-4135-a207-be3d5d255712" alt="logo" width="40%">
 </p>
 
 <div align="center">
-    <h1>LlamaTouch: A Faithful and Scalable Testbed for Mobile UI Task Automation</h1>
+    <h1>A Faithful and Scalable Testbed for Mobile UI Task Automation</h1>
 </div>
 
 
@@ -92,7 +92,6 @@ With human validation results, it can also report the accuracy of the evaluation
 ## Citation
 
 ```
-
 @misc{zhang2024llamatouch,
       title={LlamaTouch: A Faithful and Scalable Testbed for Mobile UI Task Automation}, 
       author={Li Zhang and Shihe Wang and Xianqing Jia and Zhihan Zheng and Yunhe Yan and Longxi Gao and Yuanchun Li and Mengwei Xu},
